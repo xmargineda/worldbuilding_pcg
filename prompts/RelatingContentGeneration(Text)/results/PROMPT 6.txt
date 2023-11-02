@@ -1,0 +1,14 @@
+MODEL: TheBloke_vicuna-13B-1.1-GPTQ
+PROMPT 6
+Generate the desired texts about a specific settlement. Write the texts within the context of a medieval fantasy world. Take into account the pre-established facts about the character when writing the texts.
+
+Facts:
+-The settlement is named Laern
+-Laern is a city
+-Laern is located by the sea
+-Laern is hot city
+Desired Texts: Appearance, Economy
+Generated Texts:
+Appearance: "Laern was a bustling city that stretched along the coastline, its whitewashed buildings and terracotta roof tiles glistening in the sun. The city walls were made of dark grey stone, reinforced with iron at regular intervals to keep out any potential invaders. At the heart of the city stood the grand palace of the ruling family, surrounded by lush gardens filled with exotic plants from across the continent."
+Economy: "Laern was known for its thriving trade, importing goods from all over the world and exporting its own unique products such as fine textiles, delicious spices and rare metals. The city's port was always busy, with ships coming and going from far-flung lands. Many merchants lived in the city, taking advantage of its prosperity to make their fortunes. Despite this, there were also many poorer citizens who struggled to make ends meet, living in cramped tenements near the docks."
+-----------------------------------------------------------

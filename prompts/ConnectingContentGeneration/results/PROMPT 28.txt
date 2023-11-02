@@ -1,0 +1,25 @@
+MODEL: TheBloke_vicuna-13B-1.1-GPTQ
+PROMPT 28
+We have a set of information about a world, inside of which we are trying to create a narrative. We want to create a connection between two elements of our narrative to make the story move forward. Create a list of concise, self-contained facts that give an idea of an original connection between the two topics using the provided facts you deem useful. The connection should not contradict the restricting facts.
+
+Topic 1: 
+-Ari's objective: Ari is looking for a rare flower to help his sick father
+Facts from topic 1:
+-The flower is called Purunima Alidima
+-The flower only grows in hot climates
+-The flower is very rare
+-Ari's mother is taking care of his father
+
+Topic 2: 
+-Sagim (Settlement)
+Facts from topic 2:
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+
+Restricting Facts:
+- Ari knows that the Purunima Alidima is not within the proximity of the town of Sagim
+
+Connection:
+-Ari hears rumors of a new mine opening up near Sagim and decides to investigate it himself. He believes that maybe this new mine could be closer to the location of the Purunima Alidima and helps him find the flower.
+-----------------------------------------------------------

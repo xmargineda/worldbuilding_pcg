@@ -1,0 +1,31 @@
+MODEL: TheBloke_vicuna-13B-1.1-GPTQ
+PROMPT 8
+Categorize the all entities in the text that fit into one of the categories. If an entity doesn't fit into any of the categories, do not categorize it. The categories are the following: 
+*Character, which represents a person within the story.
+*Settlement, which represents a location that is populated.
+*Place, which represents a place within the story that seems relevant.
+*Group, which represents a group of people who are working together.
+
+Text: The great mage Lyra, leader of the Arcane Conglomerate, helped the kingdom of Wasben win the Thunder War against the kingdom of Golia and the mercenaries of the Iron Fist. To show his gratefulness, the king Loan and the queen Sea built the Academy, a magical school; and a wizard tower for Lyra, where she spent the rest of her days.
+Catergorization:
+*Lyra->Character
+*Arcane Conglomerate->Faction
+*Kingdom of Wasben->Settlement
+*Kingdom of Golia->Settlement
+*Iron Fist->Faction
+*King Loan->Character
+*Queen Sea->Character
+*Academy->Place
+*Lyra's tower->Place
+
+Text: Nott was born a halfling, Revvetha "Veth" Smyt'hh, in the town of Felderwin. Growing up, she was often ridiculed for her peculiarities, which made it difficult for her to fit in, and she had abusive older siblings that used to chase her through the woods, lock her up or dunk her head in the water as "jokes". One day Veth met a halfling man named Yeza Brenatto through a game of truth or dare, and eventually they fell in love. They were later married and had a son, Luc. About three and a half years after Luc's birth, the family was kidnapped by a local goblin clan led by a couple, Drekkit and Khaaz. After being held there for weeks, Veth helped her family to escape, letting her son and husband run ahead while luring their captors away. She was cornered by the goblins and threw a vial of acid in their leader's face, killing him. The goblins recaptured Veth, and Drekkit's widow, Khaaz, took her to an old spellcaster, Isharnai, with instructions to "make her suffer".
+Catergorization:
+*Veth-> Character
+*Felderwin -> Settlement
+*Yeza Brenatto -> Character
+*Luc -> Character
+*Drekkit -> Character
+*Khaaz -> Character
+*Acid -> Entity
+*Goblin Clan -> Group
+-----------------------------------------------------------

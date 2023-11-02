@@ -1,0 +1,25 @@
+MODEL: TheBloke_vicuna-13B-1.1-GPTQ
+PROMPT 26
+Generate a list of concise, self-contained facts that establish an original connection between two elements in our narrative, using any relevant provided facts. Ensure that the connection does not contradict the restricting facts.
+
+Topic 1: 
+-Ari's objective: Ari is looking for a rare flower to help his sick father
+Facts from topic 1:
+-The flower is called Purunima Alidima
+-The flower only grows in hot climates
+-The flower is very rare
+-Ari's mother is taking care of his father
+
+Topic 2: 
+-Sagim (Settlement)
+Facts from topic 2:
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+
+Restricting Facts:
+- The Purunima Alidima is not in the town of Sagim
+
+Connection:
+-Ari and his friends go to Sagim to search for the Purunima Alidima because they heard it might be found there but end up finding something else related to the flower or the mine.
+-----------------------------------------------------------

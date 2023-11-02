@@ -1,0 +1,15 @@
+MODEL: TheBloke_vicuna-13B-1.1-GPTQ
+PROMPT 9
+Generate the desired text about a specific character. Write the text within the context of a medieval fantasy world. Take into account the pre-established facts about the character when writing the text.
+
+Facts:
+-The character is named Chanderin
+-Chanderin is a human mage
+-Chanderin has a scar from their childhood in his eye
+-Chanderin has spent some time in prison
+-Chanderin doesn't like bright colors
+Desired Text: Their personality, how they generally act and respond
+Generated Text: 
+
+Chanderin was not one to let his past dictate his present. Despite spending several years in prison for a crime he did not commit, he had managed to keep his spirits high and maintain his sense of humor. He was known among friends as being quick witted and always able to find the silver lining in any situation. However, despite this outward appearance of cheerfulness, Chanderin could not shake off the darkness that haunted him from his time in prison. The memories of the damp cold stone walls and the constant feeling of being watched still gave him nightmares. But even through these difficult times, Chanderin never lost sight of what truly mattered to him - his love for magic. It was this passion that drove him to study day and night, perfecting his spells and incantations until he became one of the most powerful mages in all the land. And yet, despite his immense power, Chanderin remained humble, always willing to help those in need and share his knowledge with others. His only true flaw was an aversion to bright colors, which he found garish and overwhelming. But even this small quirk did
+-----------------------------------------------------------

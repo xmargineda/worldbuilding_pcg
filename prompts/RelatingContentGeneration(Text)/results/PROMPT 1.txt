@@ -1,0 +1,14 @@
+MODEL: TheBloke_vicuna-13B-1.1-GPTQ
+PROMPT 1
+Generate the desired texts about Chaderin. Write the texts within the context of a medieval fantasy world. Take into account the pre-established facts about the topic when writing the texts.
+
+Facts:
+-Chanderin is a human mage
+-Chanderin has a scar from their childhood in his eye
+-Chanderin has spent some time in prison
+-Chanderin doesn't like bright colors
+Desired Texts: Appearance, Personality
+Generated Texts:
+Appearance: Chanderin is a tall and slender man with sharp features. His long fingers are calloused from years of practicing magic and his unkempt hair is often pulled back into a messy ponytail. He wears simple robes made of dark, rough fabrics that don't reflect light, as he dislikes anything too flashy or showy. Despite this, there is an air of confidence and authority around him that commands respect. One thing that stands out about his appearance is the scar above his right eyebrow, which gives him a rugged look and adds to his mysterious persona.
+Personality: Chanderin is known for being reserved and aloof, preferring to keep to himself rather than socialize with others. This can come across as cold or distant at times, but those who know him well understand that it's just his way of focusing on his work. He is fiercely independent and values his freedom above all else, which is why he chose to be a solitary mage instead of joining one of the larger magical organizations. Despite his tough exterior, Chanderin has a soft spot for animals, particularly cats
+-----------------------------------------------------------

@@ -1,0 +1,831 @@
+###############################################
+###    CONNECTING GENERATIVE PROMPTS           
+###           
+###############################################
+PROMPT 21
+Generate content that connects two topics. Here you have the two topics and a few facts about both of them. Take into account the facts from both of the topics and generate a conexion between the two.
+
+Topic 1: Ari's objective
+Facts from topic 1:
+- Ari is looking for a rare flower to help his sick father
+- The flower is called Purunima Alidima
+- The flower only grows in hot climates
+- The flower is very rare
+- Ari's mother is taking care of his father
+
+Topic 2: Sagim (Settlement)
+Facts from topic 2:
+- Sagim is a small rural town
+- Sagim has a mining operation goin on nearby
+- Sagim's main export is their minerals
+
+Connection:
+-----
+PROMPT 22
+Generate content that connects two topics. Here you have the two topics and a few facts about both of them. Take into account the facts from both of the topics and generate a conexion between the two. Feel free to create new facts about one of the topics to create the connection, while not contradicting any other fact.
+
+Topic 1: Ari's objective
+Facts from topic 1:
+- Ari is looking for a rare flower to help his sick father
+- The flower is called Purunima Alidima
+- The flower only grows in hot climates
+- The flower is very rare
+- Ari's mother is taking care of his father
+
+Topic 2: Sagim (Settlement)
+Facts from topic 2:
+- Sagim is a small rural town
+- Sagim has a mining operation goin on nearby
+- Sagim's main export is their minerals
+
+Connection:
+-----
+PROMPT 23
+Generate content that connects the following two topics. Take into account the facts from both of the topics and generate a conexion between the two.
+
+Topic 1: Ari's objective
+Facts from topic 1:
+- Ari is looking for a rare flower to help his sick father
+- The flower is called Purunima Alidima
+- The flower only grows in hot climates
+- The flower is very rare
+- Ari's mother is taking care of his father
+
+Topic 2: Sagim (Settlement)
+Facts from topic 2:
+- Sagim is a small rural town
+- Sagim has a mining operation goin on nearby
+- Sagim's main export is their minerals
+
+Connection:
+-----
+PROMPT 24
+Generate a connection between two topics using the provided facts.
+
+Topic 1: Ari's objective
+Facts from topic 1:
+-Ari is looking for a rare flower to help his sick father
+-The flower is called Purunima Alidima
+-The flower only grows in hot climates
+-The flower is very rare
+-Ari's mother is taking care of his father
+
+Topic 2: Sagim (Settlement)
+Facts from topic 2:
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+
+Connection:
+-----
+PROMPT 25
+Generate a connection between two topics. You can use following provided facts to assist.
+
+Topic 1: Ari's objective
+Facts from topic 1:
+-Ari is looking for a rare flower to help his sick father
+-The flower is called Purunima Alidima
+-The flower only grows in hot climates
+-The flower is very rare
+-Ari's mother is taking care of his father
+
+Topic 2: Sagim (Settlement)
+Facts from topic 2:
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+
+Connection:
+-----
+PROMPT 26
+Create an intriguing and mysterious connection between the two topics provided. The connection should leave room for curiosity and exploration, without providing a clear resolution.
+
+Topic 1: Ari's objective
+Facts from topic 1:
+-Ari is looking for a rare flower to help his sick father
+-The flower is called Purunima Alidima
+-The flower only grows in hot climates
+-The flower is very rare
+-Ari's mother is taking care of his father
+
+Topic 2: Sagim (Settlement)
+Facts from topic 2:
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+
+Connection:
+-----
+PROMPT 27
+Create an intriguing and mysterious connection between the two topics using the provided facts. The connection should leave room for curiosity and exploration, without providing a clear resolution.
+
+Topic 1: Ari's objective
+Facts from topic 1:
+-Ari is looking for a rare flower to help his sick father
+-The flower is called Purunima Alidima
+-The flower only grows in hot climates
+-The flower is very rare
+-Ari's mother is taking care of his father
+
+Topic 2: Sagim (Settlement)
+Facts from topic 2:
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+
+Connection:
+-----
+PROMPT 28
+Create an indirect connection between the two topics using the provided facts. The connection should leave room for curiosity and exploration, without providing a clear resolution.
+
+Topic 1: Ari's objective
+Facts from topic 1:
+-Ari is looking for a rare flower to help his sick father
+-The flower is called Purunima Alidima
+-The flower only grows in hot climates
+-The flower is very rare
+-Ari's mother is taking care of his father
+
+Topic 2: Sagim (Settlement)
+Facts from topic 2:
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+
+Connection:
+-----
+PROMPT 29
+Create a connection between the two topics using the provided facts. The connection should leave room for curiosity and exploration, without providing a clear resolution.
+
+Topic 1: Ari's objective
+Facts from topic 1:
+-Ari is looking for a rare flower to help his sick father
+-The flower is called Purunima Alidima
+-The flower only grows in hot climates
+-The flower is very rare
+-Ari's mother is taking care of his father
+
+Topic 2: Sagim (Settlement)
+Facts from topic 2:
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+-Sagim has a very cold climate
+
+Connection:
+-----
+PROMPT 30
+Create a connection between the two topics using the provided facts. The connection should not contradict the restricting facts. The connection should leave room for curiosity and exploration, without providing a clear resolution.
+
+Topic 1: Ari's objective
+Facts from topic 1:
+-Ari is looking for a rare flower to help his sick father
+-The flower is called Purunima Alidima
+-The flower only grows in hot climates
+-The flower is very rare
+-Ari's mother is taking care of his father
+
+Topic 2: Sagim (Settlement)
+Facts from topic 2:
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+
+Restricting Facts:
+- The Purunima Alidima is not in the town of Sagim
+
+Connection:
+-----
+PROMPT 31
+Generate a mysterious and engaging connection between the two topics provided while adhering to the following restricting facts. The connection should leave room for curiosity and exploration, without providing a clear resolution.
+
+Topic 1: Ari's objective
+Facts from topic 1:
+-Ari is looking for a rare flower to help his sick father
+-The flower is called Purunima Alidima
+-The flower only grows in hot climates
+-The flower is very rare
+-Ari's mother is taking care of his father
+
+Topic 2: Sagim (Settlement)
+Facts from topic 2:
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+
+Restricting Facts:
+-The Purunima Alidima is not in Sagim
+
+Connection:
+-----
+###############################
+### SOME COPIED WITH EVELYN ###
+###############################
+PROMPT 32
+Create an intriguing and mysterious connection between the two topics using the provided facts. The connection should leave room for curiosity and exploration, without providing a clear resolution.
+
+Topic 1: Evelyn's objective
+Facts from topic 1:
+-Evelyn is reasherching for her doctorate's thesis
+-Evelyn is on an expedition to uncover a lost city deep in the jungle
+-There are rumors that Evelyn's research could be groundbreaking and rewrite history
+
+Topic 2: The Haunted Mansion (Place)
+Facts from topic 2:
+-The Haunted Mansion is an old, decrepit building on the outskirts of Asith
+-The Haunted Mansion was the property of two old nobles
+
+Connection:
+-----
+PROMPT 33
+Create a connection between the two topics using the provided facts. The connection should not contradict the restricting facts. The connection should leave room for curiosity and exploration, without providing a clear resolution.
+
+Topic 1: Evelyn's objective
+Facts from topic 1:
+-Evelyn is reasherching for her doctorate's thesis
+-Evelyn is on an expedition to uncover a lost city deep in the jungle
+-There are rumors that Evelyn's research could be groundbreaking and rewrite history
+
+Topic 2: The Haunted Mansion (Place)
+Facts from topic 2:
+-The Haunted Mansion is an old, decrepit building on the outskirts of Asith
+-The Haunted Mansion was the property of two old nobles
+
+Restricting Facts:
+
+Connection:
+-----
+PROMPT 34
+Generate a mysterious and engaging connection between the two topics provided while adhering to the following restricting facts. The connection should leave room for curiosity and exploration, without providing a clear resolution.
+
+Topic 1: Evelyn's objective
+Facts from topic 1:
+-Evelyn is reasherching for her doctorate's thesis
+-Evelyn is on an expedition to uncover a lost city deep in the jungle
+-There are rumors that Evelyn's research could be groundbreaking and rewrite history
+
+Topic 2: The Haunted Mansion (Place)
+Facts from topic 2:
+-The Haunted Mansion is an old, decrepit building on the outskirts of Asith
+-The Haunted Mansion was the property of two old nobles
+
+Restricting Facts:
+
+Connection:
+-----
+########################################
+###  TURNING ARROUND THE FACTS LIST  ###
+########################################
+PROMPT 35
+Create an indirect connection between the two topics using the provided facts. The connection should leave room for curiosity and exploration, without providing a clear resolution.
+
+Topic 1: Ari's objective
+Facts from topic 1:
+-The flower only grows in hot climates
+-The flower is called Purunima Alidima
+-Ari is looking for a flower to help his sick father
+-Ari's mother is taking care of his father
+-The flower is very rare
+
+Topic 2: Sagim (Settlement)
+Facts from topic 2:
+-Sagim's main export is their minerals
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+
+Connection:
+-----
+PROMPT 36
+Create an intriguing and mysterious connection between the two topics using the provided facts. The connection should leave room for curiosity and exploration, without providing a clear resolution.
+
+Topic 1: Evelyn's objective
+Facts from topic 1:
+-There are rumors that Evelyn's research could be groundbreaking and rewrite history
+-Evelyn is on an expedition to uncover a lost city deep in the jungle
+-Evelyn is reasherching for her doctorate's thesis
+
+Topic 2: The Haunted Mansion (Place)
+Facts from topic 2:
+-The Haunted Mansion was the property of two old nobles
+-The Haunted Mansion is an old, decrepit building on the outskirts of Asith
+
+Connection:
+-----
+PROMPT 37
+Create a new narrative original connection between the two topics using the provided facts. The connection should not contradict the restricting facts. The connection should leave room for exploration, without solving any emerging narratives inside the connection.
+
+Topic 1: Ari's objective
+Facts from topic 1:
+-Ari is looking for a rare flower to help his sick father
+-The flower is called Purunima Alidima
+-The flower only grows in hot climates
+-The flower is very rare
+-Ari's mother is taking care of his father
+
+Topic 2: Sagim (Settlement)
+Facts from topic 2:
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+
+Restricting Facts:
+- The Purunima Alidima is not in the town of Sagim
+
+Connection:
+-----
+PROMPT 38
+Establish a fresh, original narrative link between the two subjects using the given information. This connection must remain consistent with the established facts and leave ample room for further exploration, refraining from resolving any emerging storylines within the connection.
+
+Topic 1: Ari's objective
+Facts from topic 1:
+-Ari is looking for a rare flower to help his sick father
+-The flower is called Purunima Alidima
+-The flower only grows in hot climates
+-The flower is very rare
+-Ari's mother is taking care of his father
+
+Topic 2: Sagim (Settlement)
+Facts from topic 2:
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+
+Restricting Facts:
+- The Purunima Alidima is not in the town of Sagim
+
+Connection:
+-----
+#####################################################
+### HERE I'M TRYING TO MAKE IT PUT IN SHORT FACTS ###
+#####################################################
+PROMPT 39
+Create a new narrative original connection between the two topics using the provided facts. The connection should not contradict the restricting facts. The connection should leave room for exploration, without solving any emerging narratives inside the connection.
+
+Topic 1: Ari's objective
+Facts from topic 1:
+-Ari is looking for a rare flower to help his sick father
+-The flower is called Purunima Alidima
+-The flower only grows in hot climates
+-The flower is very rare
+-Ari's mother is taking care of his father
+
+Topic 2: Sagim (Settlement)
+Facts from topic 2:
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+
+Restricting Facts:
+- The Purunima Alidima is not in the town of Sagim
+
+Connection:
+-
+-----
+PROMPT 40
+Establish a fresh, original narrative link between the two subjects using the given information. This connection must remain consistent with the established facts and leave ample room for further exploration, refraining from resolving any emerging storylines within the connection.
+
+Topic 1: Ari's objective
+Facts from topic 1:
+-Ari is looking for a rare flower to help his sick father
+-The flower is called Purunima Alidima
+-The flower only grows in hot climates
+-The flower is very rare
+-Ari's mother is taking care of his father
+
+Topic 2: Sagim (Settlement)
+Facts from topic 2:
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+
+Restricting Facts:
+- The Purunima Alidima is not in the town of Sagim
+
+Connection:
+-
+-----
+PROMPT 41
+Create a new narrative original connection between the two topics using the provided facts. The connection should not contradict the restricting facts. The connection should leave room for exploration, without solving any emerging narratives inside the connection. Present the connection as the list of facts established by this new connection.
+
+Topic 1: Ari's objective
+Facts from topic 1:
+-Ari is looking for a rare flower to help his sick father
+-The flower is called Purunima Alidima
+-The flower only grows in hot climates
+-The flower is very rare
+-Ari's mother is taking care of his father
+
+Topic 2: Sagim (Settlement)
+Facts from topic 2:
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+
+Restricting Facts:
+- The Purunima Alidima is not in the town of Sagim
+
+Connection:
+-
+-----
+PROMPT 42
+Create an original connection between the two topics using the provided facts. The connection should not contradict the restricting facts. The connection should leave room for exploration, without solving any emerging narratives inside the connection. Present the connection as the list of facts established by this new connection.
+
+Topic 1: Ari's objective
+Facts from topic 1:
+-Ari is looking for a rare flower to help his sick father
+-The flower is called Purunima Alidima
+-The flower only grows in hot climates
+-The flower is very rare
+-Ari's mother is taking care of his father
+
+Topic 2: Sagim (Settlement)
+Facts from topic 2:
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+
+Restricting Facts:
+- The Purunima Alidima is not in the town of Sagim
+
+Connection:
+-
+-----
+PROMPT 43
+Create a list of facts that create an original connection between the two topics using the provided facts. The connection should not contradict the restricting facts. The connection should leave room for exploration, without solving any emerging narratives inside the connection.
+
+Topic 1: Ari's objective
+Facts from topic 1:
+-Ari is looking for a rare flower to help his sick father
+-The flower is called Purunima Alidima
+-The flower only grows in hot climates
+-The flower is very rare
+-Ari's mother is taking care of his father
+
+Topic 2: Sagim (Settlement)
+Facts from topic 2:
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+
+Restricting Facts:
+- The Purunima Alidima is not in the town of Sagim
+
+Connection:
+-
+-----
+PROMPT 44
+Create a list of concise, self-contained facts that create an original connection between the two topics using the provided facts. The connection should not contradict the restricting facts. The connection should leave room for exploration, without solving any emerging narratives inside the connection.
+
+Topic 1: Ari's objective
+Facts from topic 1:
+-Ari is looking for a rare flower to help his sick father
+-The flower is called Purunima Alidima
+-The flower only grows in hot climates
+-The flower is very rare
+-Ari's mother is taking care of his father
+
+Topic 2: Sagim (Settlement)
+Facts from topic 2:
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+
+Restricting Facts:
+- The Purunima Alidima is not in the town of Sagim
+
+Connection:
+-
+-----
+PROMPT 45
+We have a set of information about a world, inside of which we are trying to create a narrative. We want to create a connection between two elements of our narrative to make the story move forward. Create a list of concise, self-contained facts that give an idea of an original connection between the two topics using the provided facts you deem useful. The connection should not contradict the restricting facts.
+
+Topic 1: 
+-Ari's objective: Ari is looking for a rare flower to help his sick father
+Facts from topic 1:
+-The flower is called Purunima Alidima
+-The flower only grows in hot climates
+-The flower is very rare
+-Ari's mother is taking care of his father
+
+Topic 2: 
+-Sagim (Settlement)
+Facts from topic 2:
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+
+Restricting Facts:
+- The Purunima Alidima is not in the town of Sagim
+
+Connection:
+-
+-----
+PROMPT 46
+Generate a list of concise, self-contained facts that establish an original connection between two elements in our narrative, using any relevant provided facts. Ensure that the connection does not contradict the restricting facts.
+
+Topic 1: 
+-Ari's objective: Ari is looking for a rare flower to help his sick father
+Facts from topic 1:
+-The flower is called Purunima Alidima
+-The flower only grows in hot climates
+-The flower is very rare
+-Ari's mother is taking care of his father
+
+Topic 2: 
+-Sagim (Settlement)
+Facts from topic 2:
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+
+Restricting Facts:
+- The Purunima Alidima is not in the town of Sagim
+
+Connection:
+-
+-----
+PROMPT 47
+We have a set of information about a world, inside of which we are trying to create a narrative. We want to create a connection between two elements of our narrative to make the story move forward. Create a list of concise, self-contained facts that give an idea of an original connection between the two topics using the provided facts you deem useful. The connection should not contradict the restricting facts.
+
+Topic 1: 
+-Ari's objective: Ari is looking for a rare flower to help his sick father
+Facts from topic 1:
+-The flower is called Purunima Alidima
+-The flower only grows in hot climates
+-The flower is very rare
+-Ari's mother is taking care of his father
+
+Topic 2: 
+-Sagim (Settlement)
+Facts from topic 2:
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+
+Restricting Facts:
+- The Purunima Alidima is not within the proximity of the town of Sagim
+
+Connection:
+-
+-----
+PROMPT 48
+We have a set of information about a world, inside of which we are trying to create a narrative. We want to create a connection between two elements of our narrative to make the story move forward. Create a list of concise, self-contained facts that give an idea of an original connection between the two topics using the provided facts you deem useful. The connection should not contradict the restricting facts.
+
+Topic 1: 
+-Ari's objective: Ari is looking for a rare flower to help his sick father
+Facts from topic 1:
+-The flower is called Purunima Alidima
+-The flower only grows in hot climates
+-The flower is very rare
+-Ari's mother is taking care of his father
+
+Topic 2: 
+-Sagim (Settlement)
+Facts from topic 2:
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+
+Restricting Facts:
+- Ari knows that the Purunima Alidima is not within the proximity of the town of Sagim
+
+Connection:
+-
+-----
+PROMPT 49
+We have a set of information about a world, inside of which we are trying to create a narrative. We want to create a connection between two elements of our narrative to make the story move forward. Create a list of concise, self-contained facts that give an idea of an original connection between the two topics using the provided facts you deem useful. The connection should not contradict the restricting facts.
+
+Topic 1: 
+-Ari's objective: Ari is looking for a rare flower to help his sick father
+Facts from topic 1:
+-The flower is called Purunima Alidima
+-The flower only grows in hot climates
+-The flower is very rare
+-Ari's mother is taking care of his father
+
+Topic 2: 
+-Sagim (Settlement)
+Facts from topic 2:
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+
+Restricting Facts:
+- The Purunima Alidima is not within the proximity of the town of Sagim
+- The Purunima Alidima is not in the mines
+
+Connection:
+-
+-----
+PROMPT 50
+Generate a list of concise, self-contained facts that establish an original connection between two elements in our narrative, using any relevant provided facts. Ensure that the connection does not contradict the restricting facts.
+
+Topic 1: 
+-Ari's objective: Ari is looking for a rare flower to help his sick father
+Facts from topic 1:
+-The flower is called Purunima Alidima
+-The flower only grows in hot climates
+-The flower is very rare
+-Ari's mother is taking care of his father
+
+Topic 2: 
+-Sagim (Settlement)
+Facts from topic 2:
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+
+Restricting Facts:
+- The Purunima Alidima is not in the town of Sagim
+- The Purunima Alidima is not underground
+
+Connection:
+-
+-----
+PROMPT 51
+Generate a list of concise, self-contained facts that establish an original connection between two elements in our narrative, using any relevant provided facts. Ensure that the connection does not contradict the restricting facts. The connection should move the plot forward and not be a dead end.
+
+Topic 1: 
+-Ari's objective: Ari is looking for a rare flower to help his sick father
+Facts from topic 1:
+-The flower is called Purunima Alidima
+-The flower only grows in hot climates
+-The flower is very rare
+-Ari's mother is taking care of his father
+
+Topic 2: 
+-Sagim (Settlement)
+Facts from topic 2:
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+
+Restricting Facts:
+- The Purunima Alidima is not in the town of Sagim
+- The Purunima Alidima is not underground
+
+Connection:
+-
+-----
+PROMPT 52
+Generate an idea for a connection between two elements in a narrative, using any relevant provided facts. The connection should be tangible and direct, not metaphysical or abstract, and it should serve to advance the narrative without necessarily resolving existing conflicts. Ensure that the connection does not contradict any of the facts. The narrative is happening in a medieval fantasy world.
+
+Element 1: 
+-Ari's objective: Ari is looking for the Purunima Alidima
+
+Element 2: 
+-Sagim (Settlement)
+
+Facts:
+-Ari's father needs a remedy made with the Purunima Alidima
+-The Purunima Alidima only grows in hot climates
+-The Purunima Alidima is very rare
+-Ari's mother is taking care of his father
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+-The Purunima Alidima is not in the town of Sagim
+-The Purunima Alidima is not in the mines
+
+Connection:
+-----
+PROMPT 53
+Generate an idea for a connection between two elements in a narrative, using any relevant provided facts. The connection should be tangible and direct, not metaphysical or abstract, and it should serve to advance the narrative without necessarily resolving existing conflicts. Ensure that the connection does not contradict any of the facts. The narrative is happening in a medieval fantasy world.
+
+Element 1: 
+-Ari's objective: Ari is looking for a rare flower to help his sick father
+Facts from element 1:
+-The flower is called Purunima Alidima
+-The flower only grows in hot climates
+-The flower is very rare
+-Ari's mother is taking care of his father
+
+Element 2: 
+-Sagim (Settlement)
+Facts from element 2:
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+
+Other Facts:
+-The Purunima Alidima is not in the town of Sagim
+-The Purunima Alidima is not underground
+
+Connection:
+-----
+PROMPT 54
+Generate an idea for a connection between two elements in a narrative, using any relevant provided facts. The connection should be noticeable within the world, and it should serve to advance the narrative without necessarily resolving existing plotlines. Ensure that the connection does not contradict any of the facts. The narrative is happening in a medieval fantasy world.
+
+Element 1: 
+-Ari's objective: Ari is looking for a rare flower to help his sick father
+Facts from element 1:
+-The flower is called Purunima Alidima
+-The flower only grows in hot climates
+-The flower is very rare
+-Ari's mother is taking care of his father
+
+Element 2: 
+-Sagim (Settlement)
+Facts from element 2:
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+
+Other Facts:
+-The Purunima Alidima is not in the town of Sagim
+-The Purunima Alidima is not underground
+
+Connection:
+-----
+PROMPT 55
+Generate succictly an idea for a connection between two elements in a narrative, using any relevant provided facts. The connection should be tangible and direct, not metaphysical or abstract, and it should serve to advance the narrative without necessarily resolving existing conflicts. Ensure that the connection does not contradict any of the facts. The narrative is happening in a medieval fantasy world.
+
+Element 1: 
+-Ari's objective: Ari is looking for the Purunima Alidima
+
+Element 2: 
+-Sagim (Settlement)
+
+Facts:
+-Ari's father needs a remedy made with the Purunima Alidima
+-The Purunima Alidima only grows in hot climates
+-The Purunima Alidima is very rare
+-Ari's mother is taking care of his father
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+-The Purunima Alidima is not in the town of Sagim
+-The Purunima Alidima is not in the mines
+
+Connection:
+-----
+PROMPT 56
+Generate schematically an idea for a connection between two elements in a narrative, using any relevant provided facts. The connection should be tangible and direct, not metaphysical or abstract, and it should serve to advance the narrative without necessarily resolving existing conflicts. Ensure that the connection does not contradict any of the facts. The narrative is happening in a medieval fantasy world.
+
+Element 1: 
+-Ari's objective: Ari is looking for the Purunima Alidima
+
+Element 2: 
+-Sagim (Settlement)
+
+Facts:
+-Ari's father needs a remedy made with the Purunima Alidima
+-The Purunima Alidima only grows in hot climates
+-The Purunima Alidima is very rare
+-Ari's mother is taking care of his father
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+-The Purunima Alidima is not in the town of Sagim
+-The Purunima Alidima is not in the mines
+
+Connection:
+-----
+PROMPT 57
+Generate an idea for a connection between two elements in a narrative, using any relevant provided facts. The connection should be noticeable within the world, and it should serve to advance the narrative without necessarily resolving existing plotlines. Ensure that the connection does not contradict any of the facts. The narrative is happening in a medieval fantasy world.
+
+Element 1: 
+-Ari's objective: Ari is looking for a rare flower to help his sick father
+Facts from element 1:
+-The flower is called Purunima Alidima
+-The flower only grows in hot climates
+-The flower is very rare
+-Ari's mother is taking care of his father
+
+Element 2: 
+-Sagim (Settlement)
+Facts from element 2:
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+
+Restricting Facts:
+-The Purunima Alidima is not in the town of Sagim
+-The Purunima Alidima is not underground
+
+Idea:
+-----
+PROMPT 58
+Generate an idea for a connection between two elements in a narrative, using any relevant provided facts. The connection should be noticeable within the world, and it should serve to advance the narrative without necessarily resolving existing plotlines. Ensure that the connection does not contradict any of the facts. The idea should be written concisely. The narrative is happening in a medieval fantasy world. 
+
+Element 1: 
+-Ari's objective: Ari is looking for a rare flower to help his sick father
+Facts from element 1:
+-The flower is called Purunima Alidima
+-The flower only grows in hot climates
+-The flower is very rare
+-Ari's mother is taking care of his father
+
+Element 2: 
+-Sagim (Settlement)
+Facts from element 2:
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+
+Restricting Facts:
+-The Purunima Alidima is not in the town of Sagim
+-The Purunima Alidima is not underground
+
+Idea:
+-----

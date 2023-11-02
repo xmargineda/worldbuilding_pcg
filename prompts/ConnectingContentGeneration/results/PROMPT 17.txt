@@ -1,0 +1,24 @@
+MODEL: TheBloke_vicuna-13B-1.1-GPTQ
+PROMPT 17
+Create a new narrative original connection between the two topics using the provided facts. The connection should not contradict the restricting facts. The connection should leave room for exploration, without solving any emerging narratives inside the connection.
+
+Topic 1: Ari's objective
+Facts from topic 1:
+-Ari is looking for a rare flower to help his sick father
+-The flower is called Purunima Alidima
+-The flower only grows in hot climates
+-The flower is very rare
+-Ari's mother is taking care of his father
+
+Topic 2: Sagim (Settlement)
+Facts from topic 2:
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+
+Restricting Facts:
+- The Purunima Alidima is not in the town of Sagim
+
+Connection:
+Despite being located in a remote area, Sagim is known for its unique natural resources that are highly sought after by traders and collectors across the land. One such resource is the rare mineral found deep within the mines of Sagim, which is said to have healing properties when used in potions and remedies. It is this same mineral that draws Ari to Sagim, hoping to find the elusive Purunima Alidima flower that can save his father's life. Little does he know that the flower is also connected to the mineral, as it thrives best in areas where the mineral is abundant. As Ari searches for the flower, he discovers that the mineral extraction process may be endangering the delicate ecosystem that sustains the flower, putting both the plant and his father's life at risk.
+-----------------------------------------------------------

@@ -1,0 +1,14 @@
+MODEL: TheBloke_vicuna-13B-1.1-GPTQ
+PROMPT 2
+Generate the desired texts about the character Chaderin. Write the texts within the context of a medieval fantasy world. Take into account the pre-established facts about the topic when writing the texts.
+
+Facts:
+-Chanderin is a human mage
+-Chanderin has a scar from their childhood in his eye
+-Chanderin has spent some time in prison
+-Chanderin doesn't like bright colors
+Desired Texts: Appearance, Personality
+Generated Texts:
+Appearance: Chanderin is a tall and slender man with sharp features. He has piercing green eyes that seem to see right through you, and a scar above his left eyebrow that gives him a rugged look. His long, dark hair is often pulled back into a ponytail, and he wears simple, dark clothing that blends into the shadows. Despite his rough exterior, there is an air of quiet intelligence about him that draws people in.
+Personality: Chanderin is a complex individual who has seen his fair share of hardships. Growing up, he was always fascinated by magic, but it was during his time in prison that he truly honed his skills as a mage. While he can be reserved and distant at times, those close to him know that he has a deep well of compassion and a strong sense of justice. He is fiercely independent and values his freedom above all else, which is why he chose to leave the order of mages he once belonged to. Despite this, he still struggles with feelings of guilt over his past actions and the choices he made to survive in a harsh world.
+-----------------------------------------------------------

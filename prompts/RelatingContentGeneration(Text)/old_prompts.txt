@@ -1,0 +1,145 @@
+PROMPT 10
+Generate the desired text about Chaderin. Write the text within the context of a medieval fantasy world. Take into account the pre-established facts about the topic.
+
+Facts:
+-Chanderin is a human mage
+-Chanderin has a scar from their childhood in his eye
+-Chanderin has spent some time in prison
+-Chanderin doesn't like bright colors
+Desired Texts: Appearance, Personality
+Generated Texts:
+-----
+PROMPT 10
+Generate the desired texts about Chaderin. Write the texts within the context of a medieval fantasy world. Take into account the pre-established facts about the topic when writing the texts.
+
+Facts:
+-Chanderin is a human mage
+-Chanderin has a scar from their childhood in his eye
+-Chanderin has spent some time in prison
+-Chanderin doesn't like bright colors
+Desired Texts: Appearance, Personality
+Generated Texts:
+-----
+PROMPT 11
+Generate the desired texts about the character Chaderin. Write the texts within the context of a medieval fantasy world. Take into account the pre-established facts about the topic when writing the texts.
+
+Facts:
+-Chanderin is a human mage
+-Chanderin has a scar from their childhood in his eye
+-Chanderin has spent some time in prison
+-Chanderin doesn't like bright colors
+Desired Texts: Appearance, Personality
+Generated Texts:
+-----
+PROMPT 12
+Generate the desired texts about a specific character. Write the texts within the context of a medieval fantasy world. Take into account the pre-established facts about the character when writing the texts.
+
+Facts:
+-The character is named Chanderin
+-Chanderin is a human mage
+-Chanderin has a scar from their childhood in his eye
+-Chanderin has spent some time in prison
+-Chanderin doesn't like bright colors
+Desired Texts: Appearance, Personality
+Generated Texts:
+-----
+PROMPT 13
+Generate the desired texts about a specific character. Write the texts within the context of a medieval fantasy world. Take into account the pre-established facts about the character to inspire the texts, whithout contradicting the facts.
+
+Facts:
+-The character is named Chanderin
+-Chanderin is a human mage
+-Chanderin has a scar from their childhood in his eye
+-Chanderin has spent some time in prison
+-Chanderin doesn't like bright colors
+Desired Texts: Appearance, Personality
+Generated Texts:
+-----
+###############################################
+###    GENERATIVE PROMPTS LOCATION            
+###           
+###############################################
+PROMPT 14
+Generate the desired texts about a specific settlement. Write the texts within the context of a medieval fantasy world. Take into account the pre-established facts about the settlement to inspire the texts, whithout contradicting the facts.
+
+Facts:
+-The settlement is named Laern
+-Laern is a city
+-Laern is located by the sea
+-Laern is hot city
+Desired Texts: Appearance, Economy
+Generated Texts:
+-----
+PROMPT 15
+Generate the desired texts about a specific settlement. Write the texts within the context of a medieval fantasy world. Take into account the pre-established facts about the character when writing the texts.
+
+Facts:
+-The settlement is named Laern
+-Laern is a city
+-Laern is located by the sea
+-Laern is hot city
+Desired Texts: Appearance, Economy
+Generated Texts:
+-----
+###############################################
+###    GENERATIVE PROMPTS INDIVIDUALLY            
+###           
+###############################################
+PROMPT 16
+Generate the desired text about a specific character. Write the text within the context of a medieval fantasy world. Take into account the pre-established facts about the character when writing the text.
+
+Facts:
+-The character is named Chanderin
+-Chanderin is a human mage
+-Chanderin has a scar from their childhood in his eye
+-Chanderin has spent some time in prison
+-Chanderin doesn't like bright colors
+Desired Text: Their appearance, how they present to the world
+Generated Text:
+-----
+PROMPT 17
+Generate the desired text about a specific character. Write the text within the context of a medieval fantasy world. Take into account the pre-established facts about the character when writing the text.
+
+Facts:
+-The character is named Chanderin
+-Chanderin is a human mage
+-Chanderin has a scar from their childhood in his eye
+-Chanderin has spent some time in prison
+-Chanderin doesn't like bright colors
+Desired Text: Their objectives, what they aim to acomplish
+Generated Text:
+-----
+PROMPT 18
+Generate the desired text about a specific character. Write the text within the context of a medieval fantasy world. Take into account the pre-established facts about the character when writing the text.
+
+Facts:
+-The character is named Chanderin
+-Chanderin is a human mage
+-Chanderin has a scar from their childhood in his eye
+-Chanderin has spent some time in prison
+-Chanderin doesn't like bright colors
+Desired Text: Their personality, how they generally act and respond
+Generated Text:
+-----
+PROMPT 19
+Generate the desired text about a specific settlement. Write the text within the context of a medieval fantasy world. Take into account the pre-established facts about the settlement to inspire the text, whithout contradicting the facts.
+
+Facts:
+-The settlement is named Laern
+-Laern is a city
+-Laern is located by the sea
+-Laern is hot city
+Desired Text: The appearance, how the settlement looks and is built
+Generated Texts:
+-----
+PROMPT 20
+Generate the desired text about a specific settlement. Write the text within the context of a medieval fantasy world. Take into account the pre-established facts about the settlement to inspire the text, whithout contradicting the facts.
+
+Facts:
+-The settlement is named Laern
+-Laern is a city
+-Laern is located by the sea
+-Laern is hot city
+Desired Text: The economy, how they gain wealth
+Generated Texts:
+-----

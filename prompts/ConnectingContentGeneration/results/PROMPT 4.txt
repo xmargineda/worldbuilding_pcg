@@ -1,0 +1,20 @@
+MODEL: TheBloke_vicuna-13B-1.1-GPTQ
+PROMPT 4
+Generate a connection between two topics using the provided facts.
+
+Topic 1: Ari's objective
+Facts from topic 1:
+-Ari is looking for a rare flower to help his sick father
+-The flower is called Purunima Alidima
+-The flower only grows in hot climates
+-The flower is very rare
+-Ari's mother is taking care of his father
+
+Topic 2: Sagim (Settlement)
+Facts from topic 2:
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+
+Connection:"Ari travels to the small rural town of Sagim, located near the mines where he finds the rare flower that will save his father's life."
+-----------------------------------------------------------

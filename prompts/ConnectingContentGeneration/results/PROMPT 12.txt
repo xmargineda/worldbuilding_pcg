@@ -1,0 +1,18 @@
+MODEL: TheBloke_vicuna-13B-1.1-GPTQ
+PROMPT 12
+Create an intriguing and mysterious connection between the two topics using the provided facts. The connection should leave room for curiosity and exploration, without providing a clear resolution.
+
+Topic 1: Evelyn's objective
+Facts from topic 1:
+-Evelyn is reasherching for her doctorate's thesis
+-Evelyn is on an expedition to uncover a lost city deep in the jungle
+-There are rumors that Evelyn's research could be groundbreaking and rewrite history
+
+Topic 2: The Haunted Mansion (Place)
+Facts from topic 2:
+-The Haunted Mansion is an old, decrepit building on the outskirts of Asith
+-The Haunted Mansion was the property of two old nobles
+
+Connection:
+Despite being located miles away from each other, both the lost city and the haunted mansion share a dark past filled with secrets and mystery. Perhaps there is a clue hidden within one of these locations that can shed light on the other. Or maybe they hold a common thread that ties them together in ways yet unknown.
+-----------------------------------------------------------

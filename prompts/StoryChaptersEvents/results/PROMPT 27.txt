@@ -1,0 +1,58 @@
+MODEL: TheBloke_vicuna-13B-1.1-GPTQ
+PROMPT 27
+A chapter is a division of a narrative composed by a number of story actions that has a similar mood througout the chapter. A story action is a relevant event within the narrative provoked by an entity that moves the plot forward in a way. 
+
+Analyze the text and write a list of all the chapters, and, for each chapter, all the story actions that belong to it in the order that they happen. The lists should only be written in refference to the entities and the text.
+
+Text: After leaving his home town in search of a remedy for his father, Ari ended up at the city of Vinyas. Ari met with Heila, a famous bottanist, at Vinurl Academy and explained the situation with his father. She deduced that the sickness that his father is suffering is Olisgareosis, a rare degenerative disease. Heila agreed to help Ari, in exchange for a favour in the future after his father has healed. Desperate to help his father, Ari agreed. After making the pact, Helia explained that to attempt to make a cure for his father she would need a rare material that couldn't be found inside her workshop: the Purunima Aldima, a flower that grows in hot climates.
+
+Entities:
+- Ari
+- Ari's father
+- Heila
+- Ari's home town
+- Vinyas
+- Vinurl Academy
+- Olisgareosis
+- Purunima Aldima
+
+Story:
+Chapter "Ari's Departure": Ari leaves his hometown to try to help his sick father
+1. Ari left his home town in search for a remedy for his father
+Chapter "Meeting Heila": Ari meets Heila, who agrees to help Ari in exchange for a favor
+1. Ari went to Vinyas
+2. Ari and Heila had a meeting
+3. Ari explained to Heila that his father was sick
+4. Heila deduced that the sickness that Ari's father is suffering is Olisgareosis
+5. Heila agreed to help Ari in exchange for a favour after his father was healed
+6. Heila explained to Ari that to attempt to make a cure for his father she would need the Purunima Aldima
+
+Text: Nott was born a halfling, Revvetha "Veth" Smyt'hh, in the town of Felderwin. Growing up, she was often ridiculed for her peculiarities, which made it difficult for her to fit in, and she had abusive older siblings that used to chase her through the woods, lock her up or dunk her head in the water as "jokes". One day Veth met a halfling man named Yeza Brenatto through a game of truth or dare, and eventually they fell in love. They were later married and had a son, Luc. About three and a half years after Luc's birth, the family was kidnapped by a local goblin clan led by a couple, Drekkit and Khaaz. After being held there for weeks, Veth helped her family to escape, letting her son and husband run ahead while luring their captors away. She was cornered by the goblins and threw a vial of acid in their leader's face, killing him. The goblins recaptured Veth, and Drekkit's widow, Khaaz, took her to an old spellcaster, Isharnai, with instructions to "make her suffer".
+
+Entities:
+- Veth
+- Felderwin
+- Yeza Brenatto
+- Luc
+- Drekkit
+- Khaaz
+- Acid
+- Goblin Clan
+
+Story:
+Chapter "The Kidnapping": Veth's family gets kidnapped by a goblin clan
+1. Veth grew up in the town of Felderwin
+2. As a child, Veth was bullied because of her appearance
+3. When she became an adult, she met a halfling man named Yeza Brenatto
+4. Veth and Yeza got married and had a son together
+5. Three and a half years after Luc's birth, Veth's family was kidnapped by a local goblin clan
+6. Veth escaped from the goblins and killed one of them using acid
+7. Veth was taken back to the goblins but managed to kill another one before escaping again
+8. Veth saved her family once more
+9. Veth's family ran away into the forest
+
+Text: In the year 1000, the world was ruled over by four great empires: the Empire of the Sun, the Empire of the Moon, the Empire of the Stars, and the Empire of the Night. These Empires were divided amongst themselves, and no single ruler could claim dominion over two different ones. However, this balance between power was threatened when the Emperor of the Night died without any direct heir. His death sparked a civil war among the other emperors, trying to gain control over both the Empire of the Night and its territory. This conflict lasted several months until finally, the Emperor of the Moon emerged victorious. With the support of most of the remaining allies, he claimed himself as the new supreme ruler of the entire continent. To commemorate his victory, he ordered the construction of a massive tower in the middle of the desert, where he planned to live out the rest of his days.
+
+Entities:
+- Four Great Emp
+-----------------------------------------------------------

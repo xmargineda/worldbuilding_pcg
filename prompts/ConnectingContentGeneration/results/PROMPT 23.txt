@@ -1,0 +1,24 @@
+MODEL: TheBloke_vicuna-13B-1.1-GPTQ
+PROMPT 23
+Create a list of facts that create an original connection between the two topics using the provided facts. The connection should not contradict the restricting facts. The connection should leave room for exploration, without solving any emerging narratives inside the connection.
+
+Topic 1: Ari's objective
+Facts from topic 1:
+-Ari is looking for a rare flower to help his sick father
+-The flower is called Purunima Alidima
+-The flower only grows in hot climates
+-The flower is very rare
+-Ari's mother is taking care of his father
+
+Topic 2: Sagim (Settlement)
+Facts from topic 2:
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+
+Restricting Facts:
+- The Purunima Alidima is not in the town of Sagim
+
+Connection:
+-Despite being located in a remote area, Sagim does have access to transportation and communication networks that could be used by Ari to reach the location where the Purunima Alidima can be found.
+-----------------------------------------------------------

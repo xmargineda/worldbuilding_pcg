@@ -1,0 +1,63 @@
+MODEL: TheBloke_vicuna-13B-1.1-GPTQ
+PROMPT 13
+Analyze the text and write a list of narrativelly relevant chapters, taking into acount the narrative context; and, for each chapter, write all the story actions that belong to it in the order that they happen. Write as many story actions per chapter as you need. All actions should include the entities given.
+
+Text: After leaving his home town in search of a remedy for his father, Ari ended up at the city of Vinyas. Following the recomendation's of his home town's mayor, Vigil, Ari went after Heila Sigor, an old fiend of his. He also gave Ari a letter written by him, which explained how he needed a favour. Ari met with her at Vinurl Academy and explained the situation with his father to the botanist. She deduced that the sickness that his father is suffering is Olisgareosis, a rare degenerative disease. Heila agreed to help Ari, in exchange for a favour in the future after his father has healed. Desperate to help his father, Ari agreed. After making the pact, Helia explained that to attempt to make a cure for his father she would need a rare material that couldn't be found inside her workshop: the Purunima Aldima, a flower that grows in hot climates.
+
+Entities:
+-Ari
+-Ari's father
+-Vigil
+-Heila
+-Ari's home town
+-Vinyas
+-Vinurl Academy
+-Vigil's letter
+-Olisgareosis
+-Purunima Aldima
+
+List:
+Chapter "Ari's Departure": Ari leaves his hometown to try to help his sick father
+1. Vigil recomended Ari to go after Heila
+2. Vigil gave Ari a letter
+3. Ari left his home town in search for a remedy for his father
+Chapter "Meeting Heila": Ari meets Heila, who agrees to help Ari in exchange for a favor
+1. Ari went to Vinyas
+2. Ari and Heila had a meeting
+3. Ari explained to Heila that his father was sick
+4. Heila deduced that the sickness that Ari's father is suffering is Olisgareosis
+5. Heila agreed to help Ari in exchange for a favour after his father was healed
+6. Heila explained to Ari that to attempt to make a cure for his father she would need the Purunima Aldima
+
+Text: Nott was born a halfling, Revvetha "Veth" Smyt'hh, in the town of Felderwin. Growing up, she was often ridiculed for her peculiarities, which made it difficult for her to fit in, and she had abusive older siblings that used to chase her through the woods, lock her up or dunk her head in the water as "jokes". One day Veth met a halfling man named Yeza Brenatto through a game of truth or dare, and eventually they fell in love. They were later married and had a son, Luc. About three and a half years after Luc's birth, the family was kidnapped by a local goblin clan led by a couple, Drekkit and Khaaz. After being held there for weeks, Veth helped her family to escape, letting her son and husband run ahead while luring their captors away. She was cornered by the goblins and threw a vial of acid in their leader's face, killing him. The goblins recaptured Veth, and Drekkit's widow, Khaaz, took her to an old spellcaster, Isharnai, with instructions to "make her suffer".
+
+Entities:
+-Veth
+-Felderwin
+-Yeza Brenatto
+-Luc
+-Drekkit
+-Khaaz
+-Acid
+-Goblin Clan
+
+List:
+Chapter 1: Childhood
+1. Born Halfling
+2. Ridiculed
+3. Abused by Older Siblings
+4. Meets Yeza
+5. Marries Yeza
+6. Has Son Luc
+7. Family Kidnapping
+8. Escape from Kidnappers
+9. Acid Thrown on Leader
+10. Cornered by Goblins
+11. Taken to Isharnai
+
+Chapter 2: Pregnancy & Early Life
+1. Pregnant with Luc
+2. Gives Birth to Luc
+3. Raises Luc
+4. Married Life
+-----------------------------------------------------------

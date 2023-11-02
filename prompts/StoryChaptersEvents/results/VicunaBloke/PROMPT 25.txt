@@ -1,0 +1,2 @@
+MODEL: TheBloke_vicuna-13B-1.1-GPTQ
+PROMPT 25

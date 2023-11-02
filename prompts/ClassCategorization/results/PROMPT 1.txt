@@ -1,0 +1,29 @@
+MODEL: TheBloke_vicuna-13B-1.1-GPTQ
+PROMPT 1
+Categorize the different entities in the text that coincide with one of the categories. The categories include Character, which is a person within the story; Location, which is a place where an important event happens within the story or is populated; and Faction, which is a group of people who are working together towards a common goal.
+
+Text: The great mage Lyra, leader of the Arcane Conglomerate, helped the kingdom of Wasben win the Thunder War against the kingdom of Golia and the mercenaries of the Iron Fist. To show his gratefulness, the king Loan and the queen Sea built the Academy, a magical school; and a wizard tower for Lyra, where she spent the rest of her days.
+A:
+*Lyra->Character
+*Arcane Conglomerate->Faction
+*Kingdom of Wasben->Location
+*Kingdom of Wasben->Faction
+*Kingdom of Golia->Location
+*Kingdom of Golia->Faction
+*Iron Fist->Faction
+*King Loan->Character
+*Queen Sea->Character
+*Academy->Location
+*Lyra's tower->Location
+
+Text: Nott was born a halfling, Revvetha "Veth" Smyt'hh, in the town of Felderwin. Growing up, she was often ridiculed for her peculiarities, which made it difficult for her to fit in, and she had abusive older siblings that used to chase her through the woods, lock her up or dunk her head in the water as "jokes". One day Veth met a halfling man named Yeza Brenatto through a game of truth or dare, and eventually they fell in love. They were later married and had a son, Luc. About three and a half years after Luc's birth, the family was kidnapped by a local goblin clan led by a couple, Drekkit and Khaaz. After being held there for weeks, Veth helped her family to escape, letting her son and husband run ahead while luring their captors away. She was cornered by the goblins and threw a vial of acid in their leader's face, killing him. The goblins recaptured Veth, and Drekkit's widow, Khaaz, took her to an old spellcaster, Isharnai, with instructions to "make her suffer".
+A:
+*Veth (Revvetha)->Character
+*Yeza Brenatto->Character
+*Luc->Character
+*Drekkit->Character
+*Khaaz->Character
+*Goblin Clan->Group
+*Acid->Object
+*Spellcaster Isharnai->Character
+-----------------------------------------------------------

@@ -1,0 +1,24 @@
+MODEL: TheBloke_vicuna-13B-1.1-GPTQ
+PROMPT 32
+Generate an idea for a connection between two elements in a narrative, using any relevant provided facts. The connection should be tangible and direct, not metaphysical or abstract, and it should serve to advance the narrative without necessarily resolving existing conflicts. Ensure that the connection does not contradict any of the facts. The narrative is happening in a medieval fantasy world.
+
+Element 1: 
+-Ari's objective: Ari is looking for the Purunima Alidima
+
+Element 2: 
+-Sagim (Settlement)
+
+Facts:
+-Ari's father needs a remedy made with the Purunima Alidima
+-The Purunima Alidima only grows in hot climates
+-The Purunima Alidima is very rare
+-Ari's mother is taking care of his father
+-Sagim is a small rural town
+-Sagim has a mining operation going on nearby
+-Sagim's main export is their minerals
+-The Purunima Alidima is not in the town of Sagim
+-The Purunima Alidima is not in the mines
+
+Connection:
+Ari's search for the Purunima Alidima leads him to Sagim because he heard from someone that the town exports minerals which could mean they have access to transportation which would make it easier for him to find the plant. He also knows that the plant is not in the town but it might be near the mine as the climate there is suitable for the growth of such plants.
+-----------------------------------------------------------

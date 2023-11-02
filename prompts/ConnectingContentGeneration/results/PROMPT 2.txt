@@ -1,0 +1,21 @@
+MODEL: TheBloke_vicuna-13B-1.1-GPTQ
+PROMPT 2
+Generate content that connects two topics. Here you have the two topics and a few facts about both of them. Take into account the facts from both of the topics and generate a conexion between the two. Feel free to create new facts about one of the topics to create the connection, while not contradicting any other fact.
+
+Topic 1: Ari's objective
+Facts from topic 1:
+- Ari is looking for a rare flower to help his sick father
+- The flower is called Purunima Alidima
+- The flower only grows in hot climates
+- The flower is very rare
+- Ari's mother is taking care of his father
+
+Topic 2: Sagim (Settlement)
+Facts from topic 2:
+- Sagim is a small rural town
+- Sagim has a mining operation goin on nearby
+- Sagim's main export is their minerals
+
+Connection:
+Ari's search for the rare flower leads him to the small rural town of Sagim, where he discovers that the mining operation is threatening the natural habitat of the Purunima Alidima flower. He meets with the mayor of Sagim and some of the miners who are working at the site, they explain how important the mine is for the economy of the town but also understand the importance of preserving the environment. With the help of the community, Ari starts an environmental campaign to stop the destruction of the flower's habitat.
+-----------------------------------------------------------

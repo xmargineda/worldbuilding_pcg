@@ -1,0 +1,21 @@
+MODEL: TheBloke_vicuna-13B-1.1-GPTQ
+PROMPT 14
+Generate a mysterious and engaging connection between the two topics provided while adhering to the following restricting facts. The connection should leave room for curiosity and exploration, without providing a clear resolution.
+
+Topic 1: Evelyn's objective
+Facts from topic 1:
+-Evelyn is reasherching for her doctorate's thesis
+-Evelyn is on an expedition to uncover a lost city deep in the jungle
+-There are rumors that Evelyn's research could be groundbreaking and rewrite history
+
+Topic 2: The Haunted Mansion (Place)
+Facts from topic 2:
+-The Haunted Mansion is an old, decrepit building on the outskirts of Asith
+-The Haunted Mansion was the property of two old nobles
+
+Restricting Facts:
+
+Connection: Both Evelyn and the Haunted Mansion have something valuable or important that others would kill for.
+
+Word Count: 300 words
+-----------------------------------------------------------

@@ -1,0 +1,15 @@
+MODEL: TheBloke_vicuna-13B-1.1-GPTQ
+PROMPT 10
+Generate the desired text about a specific settlement. Write the text within the context of a medieval fantasy world. Take into account the pre-established facts about the settlement to inspire the text, whithout contradicting the facts.
+
+Facts:
+-The settlement is named Laern
+-Laern is a city
+-Laern is located by the sea
+-Laern is hot city
+Desired Text: The appearance, how the settlement looks and is built
+Generated Texts:
+1. "Laern was a bustling city that stretched along the coastline, its whitewashed buildings reflecting the sun's rays off the calm waters of the sea. Its walls were made of sturdy stone, reinforced with wood and iron, standing tall against any potential invaders."
+2. "As you approached Laern, you couldn't help but notice the grand architecture that dominated the skyline. The city was filled with towering spires, arches, and domes, all made from a mix of local materials such as clay bricks and limestone. Each building had its own unique design, yet they all shared a common theme of grandeur and beauty."
+3. "Laern was a city that thrived on trade and commerce. Its busy harbor was always teeming with ships coming in from faraway lands, carrying exotic goods and rare treasures. The streets were lined with marketplaces, where merchants sold their wares and haggled over prices with eager customers."
+-----------------------------------------------------------

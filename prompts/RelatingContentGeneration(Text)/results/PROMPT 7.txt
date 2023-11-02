@@ -1,0 +1,15 @@
+MODEL: TheBloke_vicuna-13B-1.1-GPTQ
+PROMPT 7
+Generate the desired text about a specific character. Write the text within the context of a medieval fantasy world. Take into account the pre-established facts about the character when writing the text.
+
+Facts:
+-The character is named Chanderin
+-Chanderin is a human mage
+-Chanderin has a scar from their childhood in his eye
+-Chanderin has spent some time in prison
+-Chanderin doesn't like bright colors
+Desired Text: Their appearance, how they present to the world
+Generated Text: 
+
+Chanderin was a tall and slender man with a serious expression on his face. His dark hair was kept short and neatly trimmed, framing a face that bore the marks of a difficult life. A scar ran down the left side of his face, starting at his temple and ending at his jawline, giving him a rugged look. He had piercing green eyes that seemed to see right through you, making it clear that he was not someone to be trifled with. Despite his imposing presence, there was an air of sadness about him that made one wonder what secrets lay hidden beneath his surface.
+-----------------------------------------------------------
