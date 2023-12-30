@@ -2,3 +2,4 @@ ClassCategorization
 RelatingContentGeneration(Text)
 ConnectingContentGeneration
 StoryChaptersEvents
+OntologyConnect

@@ -1,0 +1,1139 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#"
+     xml:base="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#asset -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#asset">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#entityRelatingProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#placement"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Location"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Item"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#associated_group -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#associated_group">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#entityRelatingProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#member"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Group"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#child -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#child">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#entityRelatingProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#parent"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#citizen -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#citizen">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#entityRelatingProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#residence"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Settlement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#contains">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#isContainedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Chapter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#entityRelatingProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#entityRelatingProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Entity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#event -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#event">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#entityRelatingProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#location"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Location"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Historic_Incident"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Prophecy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#holder -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#holder">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#entityRelatingProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#possession"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Item"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Group"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#involvement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#involvement">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#entityRelatingProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#participant"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Character"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Group"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Historic_Incident"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#isContainedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#isContainedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Action"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Chapter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#isInvolvedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#isInvolvedIn">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#isRelatedTo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Entity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Action"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Chapter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#isRelatedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#isRelatedTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Action"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Chapter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#leader -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#leader">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#entityRelatingProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#leads"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Group"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#leads -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#leads">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#entityRelatingProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Group"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#location -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#location">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#entityRelatingProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Historic_Incident"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Prophecy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#member -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#member">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#entityRelatingProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Group"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#nextAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#nextAction">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#prevAction"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Action"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#nextChapter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#nextChapter">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#prevChapter"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Chapter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Chapter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#object -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#object">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#entityRelatingProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#usage_event"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Item"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#occupant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#occupant">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#entityRelatingProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#ubication"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Location"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Group"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#parent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#parent">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#entityRelatingProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#participant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#participant">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#entityRelatingProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Historic_Incident"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Group"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#placement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#placement">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#entityRelatingProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Item"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#possession -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#possession">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#entityRelatingProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Character"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Group"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Item"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#prevAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#prevAction">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Action"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#prevChapter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#prevChapter">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Chapter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Chapter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#residence -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#residence">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#entityRelatingProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Settlement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#sibling -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#sibling">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#entityRelatingProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#subsection -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#subsection">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#entityRelatingProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#supersection"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Location"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#supersection -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#supersection">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#entityRelatingProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Location"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#tradition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#tradition">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#entityRelatingProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#venue"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Location"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Tradition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#ubication -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#ubication">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#entityRelatingProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Character"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Group"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#usage_event -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#usage_event">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#entityRelatingProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Item"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#venue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#venue">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#entityRelatingProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Tradition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#appearance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#appearance">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Character"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Item"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#climate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#climate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#demographic -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#demographic">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Settlement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#description">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#dislikes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#dislikes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#duration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#duration">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#economy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#economy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Settlement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#fact -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#fact">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#fauna -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#fauna">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#flora -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#flora">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#frequency -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#frequency">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Tradition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#geography -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#geography">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#likes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#likes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#material -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#material">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Item"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#objective -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#objective">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Character"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Group"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#organization -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#organization">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Group"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#origin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#origin">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Prophecy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Tradition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#population -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#population">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Settlement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#profession -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#profession">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#rituals -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#rituals">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Tradition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#str_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#str_name">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#time_elapsed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#time_elapsed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Historic_Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#use -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#use">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Item"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#value">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Item"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Action"/>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Chapter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Chapter"/>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Character -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Character">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Entity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Entity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Event">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Group -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Group">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Historic_Incident -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Historic_Incident">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Location">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Main_Character -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Main_Character">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Character"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#NonMain_Character -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#NonMain_Character">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Character"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Place">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Prophecy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Prophecy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Settlement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Settlement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Tradition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Tradition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Arcane_Prism -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Arcane_Prism">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Item"/>
+        <str_name>Arcane Prism</str_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Cardun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Cardun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Settlement"/>
+        <str_name>Cardun</str_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Cerise -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Cerise">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#NonMain_Character"/>
+        <str_name>Cerise</str_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Cledan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Cledan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#NonMain_Character"/>
+        <description>Cledant is a merchant from Segalia</description>
+        <str_name>Cledan</str_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Coelus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Coelus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Group"/>
+        <description>Coelus is a secret society working in order to maintain the balance of magic</description>
+        <str_name>Coelus</str_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Departure_for_Yverun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Departure_for_Yverun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Chapter"/>
+        <str_name>Departure for Yverun</str_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Eyes_of_Hemm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Eyes_of_Hemm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Group"/>
+        <str_name>Eyes of Hemm</str_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Fiona -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Fiona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Main_Character"/>
+        <description>Fiona is a powerfull sorceress</description>
+        <str_name>Fiona</str_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Gulian_Woods -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Gulian_Woods">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Place"/>
+        <str_name>Gulian Woods</str_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Introduction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Introduction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Chapter"/>
+        <str_name>Introduction</str_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Meeting_the_Coelus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Meeting_the_Coelus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Chapter"/>
+        <str_name>Meeting the Coelus</str_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Nion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Nion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#NonMain_Character"/>
+        <str_name>Nion</str_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Nogern -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Nogern">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Place"/>
+        <str_name>Nogern</str_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Samek -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Samek">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Main_Character"/>
+        <description>Samek is an expert treasure hunter</description>
+        <str_name>Samek</str_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Segalia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Segalia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Settlement"/>
+        <str_name>Segalia</str_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Sonia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Sonia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#NonMain_Character"/>
+        <str_name>Sonia</str_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Tiope -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Tiope">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#NonMain_Character"/>
+        <description>Tiope is an imortal witch</description>
+        <str_name>Tiope</str_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Yverun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Yverun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Item"/>
+        <description>Yverun is a powerful magical divinatory item</description>
+        <str_name>Yverun</str_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Action"/>
+        <isContainedBy rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Introduction"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Fiona"/>
+        <nextAction rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action2"/>
+        <fact>Fiona is interested in studying magic</fact>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Action"/>
+        <isContainedBy rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Meeting_the_Coelus"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Coelus"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Fiona"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Samek"/>
+        <nextAction rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action11"/>
+        <fact>To help Fiona, the Coelus introduced her to Samek.</fact>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Action"/>
+        <isContainedBy rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Departure_for_Yverun"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Fiona"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Gulian_Woods"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Samek"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Yverun"/>
+        <nextAction rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action12"/>
+        <fact>Fiona and Samek travelled to the Gulian Woods to look for Yverun.</fact>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Action"/>
+        <isContainedBy rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Departure_for_Yverun"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Fiona"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Samek"/>
+        <nextAction rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action13"/>
+        <fact>Fiona and Samek faced a number of challenges</fact>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Action"/>
+        <isContainedBy rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Departure_for_Yverun"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Fiona"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Samek"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Sonia"/>
+        <nextAction rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action14"/>
+        <fact>Fiona and Samek met Sonia</fact>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Action"/>
+        <isContainedBy rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Departure_for_Yverun"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Fiona"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Samek"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Sonia"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Yverun"/>
+        <nextAction rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action15"/>
+        <fact>Sonia directed Fiona and Samek to Yverun</fact>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Action"/>
+        <isContainedBy rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Departure_for_Yverun"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Arcane_Prism"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Fiona"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Samek"/>
+        <nextAction rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action16"/>
+        <fact>Fiona and Samek divined the position of the Arcane Prism</fact>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action16 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action16">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Action"/>
+        <isContainedBy rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Departure_for_Yverun"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Arcane_Prism"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Nogern"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Tiope"/>
+        <fact>The Arcane Prism is being guarded by Tiope in the ruins of Nogern</fact>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Action"/>
+        <isContainedBy rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Introduction"/>
+        <nextAction rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action3"/>
+        <fact>The authorities of Segalia have put strict restrictions on the use of magic.</fact>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Action"/>
+        <isContainedBy rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Introduction"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Fiona"/>
+        <nextAction rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action4"/>
+        <fact>Fiona starts questioning the restrictions.</fact>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Action"/>
+        <isContainedBy rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Introduction"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Cerise"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Fiona"/>
+        <nextAction rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action5"/>
+        <fact>Fiona talks to Cerise about the restrictions.</fact>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Action"/>
+        <isContainedBy rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Meeting_the_Coelus"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Cerise"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Coelus"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Fiona"/>
+        <nextAction rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action6"/>
+        <fact>Cerise introduces Fiona to the Coelus.</fact>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Action"/>
+        <isContainedBy rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Meeting_the_Coelus"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Arcane_Prism"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Cledan"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Coelus"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Fiona"/>
+        <nextAction rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action7"/>
+        <fact>The Coelus explained to Fiona that Cledan was trying to locate the Arcane Prism.</fact>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Action"/>
+        <isContainedBy rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Meeting_the_Coelus"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Arcane_Prism"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Cledan"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Coelus"/>
+        <nextAction rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action8"/>
+        <fact>The Coelus explained that Cledan installed the restrictions to help him locate the Arcane Prism.</fact>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Action"/>
+        <isContainedBy rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Meeting_the_Coelus"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Arcane_Prism"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Cledan"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Nion"/>
+        <nextAction rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action9"/>
+        <fact>Cledan had sent Nion after the Arcane Prism</fact>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Action"/>
+        <isContainedBy rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Meeting_the_Coelus"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Arcane_Prism"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Cledan"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Coelus"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Fiona"/>
+        <nextAction rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action10"/>
+        <fact>The Coelus asked Fiona to seek the Arcane Prism before Cledan could get his hands on it.</fact>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

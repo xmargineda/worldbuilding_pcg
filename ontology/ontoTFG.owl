@@ -21,6 +21,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#contains">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#isContainedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Chapter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Fact"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#defines -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#defines">
@@ -28,6 +38,15 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Descriptor"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#State"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#isContainedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#isContainedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Fact"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Chapter"/>
     </owl:ObjectProperty>
     
 
@@ -62,6 +81,86 @@
     
 
 
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#nextAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#nextAction">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#prevAction"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Action"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#nextChapter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#nextChapter">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#prevChapter"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Chapter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Chapter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#prevAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#prevAction">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Action"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#prevChapter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#prevChapter">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Chapter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Chapter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#description">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#fact -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#fact">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Fact"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#name">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Character"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -81,18 +180,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Chapter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Chapter"/>
+    
+
+
     <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Character -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Character">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Entity"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Custom -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Custom">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Tradition"/>
     </owl:Class>
     
 
@@ -119,24 +216,16 @@
     
 
 
-    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Fabricated_Rules -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Fabricated_Rules">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Rules"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Fact -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Fact"/>
     
 
 
-    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Festival -->
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Group -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Festival">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Tradition"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Group">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Entity"/>
     </owl:Class>
     
 
@@ -153,14 +242,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Location">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Entity"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Magic_Rules -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Magic_Rules">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Universal_Rules"/>
     </owl:Class>
     
 
@@ -189,12 +270,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Rules -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Rules"/>
-    
-
-
     <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Secondary_Character -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Secondary_Character">
@@ -217,53 +292,6 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Fact"/>
         <rdfs:comment>This is used to deffine the current state of a place / charachter</rdfs:comment>
     </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Tradition -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Tradition"/>
-    
-
-
-    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Universal_Rules -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Universal_Rules">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Rules"/>
-    </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Isharnai -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Isharnai">
-        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Character"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Nott -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Nott">
-        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Character"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#con1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#con1"/>
 </rdf:RDF>
 
 

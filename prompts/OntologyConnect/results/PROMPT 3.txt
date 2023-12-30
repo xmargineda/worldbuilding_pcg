@@ -1,0 +1,22 @@
+MODEL: TheBloke_vicuna-13B-1.1-GPTQ
+PROMPT 3
+Context: A chapter is a division of a narrative composed by a number of story actions (at least one) that has a similar mood througout the chapter. A story action is a relevant event within the narrative provoked by an entity that moves the plot forward in a way. 
+
+Rewrite the story action by substituting any pronouns in it for the relevant entities within that story action. Make sure the story action still follows the narrative of the text.
+
+Text: Nott was born a halfling, Revvetha "Veth" Smyt'hh, in the town of Felderwin. Growing up, she was often ridiculed for her peculiarities, which made it difficult for her to fit in, and she had abusive older siblings that used to chase her through the woods, lock her up or dunk her head in the water as "jokes". One day Veth met a halfling man named Yeza Brenatto through a game of truth or dare, and eventually they fell in love. They were later married and had a son, Luc. About three and a half years after Luc's birth, the family was kidnapped by a local goblin clan led by a couple, Drekkit and Khaaz. After being held there for weeks, Veth helped her family to escape, letting her son and husband run ahead while luring their captors away. She was cornered by the goblins and threw a vial of acid in their leader's face, killing him. The goblins recaptured Veth, and Drekkit's widow, Khaaz, took her to an old spellcaster, Isharnai, with instructions to "make her suffer".
+
+Entities:
+- Veth
+- Felderwin
+- Yeza Brenatto
+- Luc
+- Drekkit
+- Khaaz
+- Acid
+- Goblin Clan
+
+Story action: Her peculiarities caused difficulties fitting in
+
+Rewriten action: It proved challenging for Veth to find acceptance due to her differences.
+-----------------------------------------------------------

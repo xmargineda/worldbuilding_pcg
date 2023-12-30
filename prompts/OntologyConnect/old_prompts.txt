@@ -1,0 +1,295 @@
+PROMPT 1
+Context: A chapter is a division of a narrative composed by a number of story actions (at least one) that has a similar mood througout the chapter. A story action is a relevant event within the narrative provoked by an entity that moves the plot forward in a way. 
+
+Rewrite the story by substituting the pronouns in the story actions for the relevant entities within that story action.
+
+Text: Nott was born a halfling, Revvetha "Veth" Smyt'hh, in the town of Felderwin. Growing up, she was often ridiculed for her peculiarities, which made it difficult for her to fit in, and she had abusive older siblings that used to chase her through the woods, lock her up or dunk her head in the water as "jokes". One day Veth met a halfling man named Yeza Brenatto through a game of truth or dare, and eventually they fell in love. They were later married and had a son, Luc. About three and a half years after Luc's birth, the family was kidnapped by a local goblin clan led by a couple, Drekkit and Khaaz. After being held there for weeks, Veth helped her family to escape, letting her son and husband run ahead while luring their captors away. She was cornered by the goblins and threw a vial of acid in their leader's face, killing him. The goblins recaptured Veth, and Drekkit's widow, Khaaz, took her to an old spellcaster, Isharnai, with instructions to "make her suffer".
+
+Entities:
+- Veth
+- Felderwin
+- Yeza Brenatto
+- Luc
+- Drekkit
+- Khaaz
+- Acid
+- Goblin Clan
+
+Story:
+Chapter "Childhood Abuse": Veth experiences abuse from her older siblings
+1. Veth grew up in Felderwin
+2. Her peculiarities caused difficulties fitting in
+3. She experienced abuse from her older siblings
+
+Chapter "Meeting Yeza": Veth meets Yeza and falls in love
+1. Veth met Yeza Brenatto
+2. They fell in love
+
+Chapter "Marriage and Son": Veth marries Yeza and has a son
+1. Veth and Yeza got married
+2. They had a son named Luc
+
+Chapter "Kidnapping": Veth and her family are kidnapped by a goblin clan
+1. Veth and her family were kidnapped
+
+Chapter "Escape and Revenge": Veth helps her family escape and kills Drekkit
+1. Veth helped her family escape
+2. She killed Drekkit with acid
+
+Chapter "Captivity and Torture": Veth is captured again and tortured by Isharnai
+1. Veth was captured
+
+Rewritten story:
+-----
+PROMPT 2
+Context: A chapter is a division of a narrative composed by a number of story actions (at least one) that has a similar mood througout the chapter. A story action is a relevant event within the narrative provoked by an entity that moves the plot forward in a way. 
+
+Rewrite the story by substituting the pronouns in the story actions for the relevant entities within that story action.
+
+Entities:
+- Veth
+- Felderwin
+- Yeza Brenatto
+- Luc
+- Drekkit
+- Khaaz
+- Acid
+- Goblin Clan
+
+Story:
+Chapter "Childhood Abuse": Veth experiences abuse from her older siblings
+1. Veth grew up in Felderwin
+2. Her peculiarities caused difficulties fitting in
+3. She experienced abuse from her older siblings
+
+Chapter "Meeting Yeza": Veth meets Yeza and falls in love
+1. Veth met Yeza Brenatto
+2. They fell in love
+
+Chapter "Marriage and Son": Veth marries Yeza and has a son
+1. Veth and Yeza got married
+2. They had a son named Luc
+
+Chapter "Kidnapping": Veth and her family are kidnapped by a goblin clan
+1. Veth and her family were kidnapped
+
+Chapter "Escape and Revenge": Veth helps her family escape and kills Drekkit
+1. Veth helped her family escape
+2. She killed Drekkit with acid
+
+Chapter "Captivity and Torture": Veth is captured again and tortured by Isharnai
+1. Veth was captured
+
+Rewritten story:
+-----
+PROMPT 3
+Context: A chapter is a division of a narrative composed by a number of story actions (at least one) that has a similar mood througout the chapter. A story action is a relevant event within the narrative provoked by an entity that moves the plot forward in a way. 
+
+Rewrite the story action by substituting any pronouns in it for the relevant entities within that story action. Make sure the story action still follows the narrative of the text.
+
+Text: Nott was born a halfling, Revvetha "Veth" Smyt'hh, in the town of Felderwin. Growing up, she was often ridiculed for her peculiarities, which made it difficult for her to fit in, and she had abusive older siblings that used to chase her through the woods, lock her up or dunk her head in the water as "jokes". One day Veth met a halfling man named Yeza Brenatto through a game of truth or dare, and eventually they fell in love. They were later married and had a son, Luc. About three and a half years after Luc's birth, the family was kidnapped by a local goblin clan led by a couple, Drekkit and Khaaz. After being held there for weeks, Veth helped her family to escape, letting her son and husband run ahead while luring their captors away. She was cornered by the goblins and threw a vial of acid in their leader's face, killing him. The goblins recaptured Veth, and Drekkit's widow, Khaaz, took her to an old spellcaster, Isharnai, with instructions to "make her suffer".
+
+Entities:
+- Veth
+- Felderwin
+- Yeza Brenatto
+- Luc
+- Drekkit
+- Khaaz
+- Acid
+- Goblin Clan
+
+Story action: Her peculiarities caused difficulties fitting in
+
+Rewriten action:
+-----
+PROMPT 4
+Context: A story action is a relevant event within the narrative provoked by an entity that moves the plot forward in a way. 
+
+Here's a story action from the text. Replace any pronouns in the story action that reference any of the entities with the name of the entity referenced.
+
+Text: Nott was born a halfling, Revvetha "Veth" Smyt'hh, in the town of Felderwin. Growing up, she was often ridiculed for her peculiarities, which made it difficult for her to fit in, and she had abusive older siblings that used to chase her through the woods, lock her up or dunk her head in the water as "jokes". One day Veth met a halfling man named Yeza Brenatto through a game of truth or dare, and eventually they fell in love. They were later married and had a son, Luc. About three and a half years after Luc's birth, the family was kidnapped by a local goblin clan led by a couple, Drekkit and Khaaz. After being held there for weeks, Veth helped her family to escape, letting her son and husband run ahead while luring their captors away. She was cornered by the goblins and threw a vial of acid in their leader's face, killing him. The goblins recaptured Veth, and Drekkit's widow, Khaaz, took her to an old spellcaster, Isharnai, with instructions to "make her suffer".
+
+Entities:
+- Veth
+- Felderwin
+- Yeza Brenatto
+- Luc
+- Drekkit
+- Khaaz
+- Acid
+- Goblin Clan
+
+Story action: Her peculiarities caused difficulties fitting in
+
+Rewriten action:
+-----
+PROMPT 5
+Context: A story action is a relevant event within the narrative provoked by an entity that moves the plot forward in a way. 
+
+Replace any pronouns in the story action that reference any of the entities with the name of the entity referenced. The story action should be syntactically identical.
+
+Text: Nott was born a halfling, Revvetha "Veth" Smyt'hh, in the town of Felderwin. Growing up, she was often ridiculed for her peculiarities, which made it difficult for her to fit in, and she had abusive older siblings that used to chase her through the woods, lock her up or dunk her head in the water as "jokes". One day Veth met a halfling man named Yeza Brenatto through a game of truth or dare, and eventually they fell in love. They were later married and had a son, Luc. About three and a half years after Luc's birth, the family was kidnapped by a local goblin clan led by a couple, Drekkit and Khaaz. After being held there for weeks, Veth helped her family to escape, letting her son and husband run ahead while luring their captors away. She was cornered by the goblins and threw a vial of acid in their leader's face, killing him. The goblins recaptured Veth, and Drekkit's widow, Khaaz, took her to an old spellcaster, Isharnai, with instructions to "make her suffer".
+
+Entities:
+- Veth
+- Felderwin
+- Yeza Brenatto
+- Luc
+- Drekkit
+- Khaaz
+- Acid
+- Goblin Clan
+
+Story action: Her peculiarities caused difficulties fitting in
+
+Rewriten action:
+
+-----
+PROMPT 6
+Context: A story action is a relevant event within the narrative provoked by an entity that moves the plot forward in a way. 
+
+Replace any pronouns in the story action that reference any of the entities with the name of the entity referenced. The changes in the story action should be minimal.
+
+Text: Nott was born a halfling, Revvetha "Veth" Smyt'hh, in the town of Felderwin. Growing up, she was often ridiculed for her peculiarities, which made it difficult for her to fit in, and she had abusive older siblings that used to chase her through the woods, lock her up or dunk her head in the water as "jokes". One day Veth met a halfling man named Yeza Brenatto through a game of truth or dare, and eventually they fell in love. They were later married and had a son, Luc. About three and a half years after Luc's birth, the family was kidnapped by a local goblin clan led by a couple, Drekkit and Khaaz. After being held there for weeks, Veth helped her family to escape, letting her son and husband run ahead while luring their captors away. She was cornered by the goblins and threw a vial of acid in their leader's face, killing him. The goblins recaptured Veth, and Drekkit's widow, Khaaz, took her to an old spellcaster, Isharnai, with instructions to "make her suffer".
+
+Entities:
+- Veth
+- Felderwin
+- Yeza Brenatto
+- Luc
+- Drekkit
+- Khaaz
+- Acid
+- Goblin Clan
+
+Story action: Her peculiarities caused difficulties fitting in
+
+Rewriten action:
+
+-----
+PROMPT 7
+Context: A story action is a relevant event within the text provoked by an entity that moves the plot forward in a way. 
+
+Replace only the pronouns in the story action that reference any of the entities with the name of the entity referenced. The changes in the story action should be minimal.
+
+Text: Nott was born a halfling, Revvetha "Veth" Smyt'hh, in the town of Felderwin. Growing up, she was often ridiculed for her peculiarities, which made it difficult for her to fit in, and she had abusive older siblings that used to chase her through the woods, lock her up or dunk her head in the water as "jokes". One day Veth met a halfling man named Yeza Brenatto through a game of truth or dare, and eventually they fell in love. They were later married and had a son, Luc. About three and a half years after Luc's birth, the family was kidnapped by a local goblin clan led by a couple, Drekkit and Khaaz. After being held there for weeks, Veth helped her family to escape, letting her son and husband run ahead while luring their captors away. She was cornered by the goblins and threw a vial of acid in their leader's face, killing him. The goblins recaptured Veth, and Drekkit's widow, Khaaz, took her to an old spellcaster, Isharnai, with instructions to "make her suffer".
+
+Entities:
+- Veth
+- Felderwin
+- Yeza Brenatto
+- Luc
+- Drekkit
+- Khaaz
+- Acid
+- Goblin Clan
+
+Story action: Her peculiarities caused difficulties fitting in
+
+Rewriten action:
+
+-----
+PROMPT 8
+Context: A story action is a relevant event within the text provoked by an entity that moves the plot forward in a way. 
+
+Replace only the pronouns in the story action that reference any of the entities with the name of the entity referenced. The changes in the story action should be minimal.
+
+Text: Nott was born a halfling, Revvetha "Veth" Smyt'hh, in the town of Felderwin. Growing up, she was often ridiculed for her peculiarities, which made it difficult for her to fit in, and she had abusive older siblings that used to chase her through the woods, lock her up or dunk her head in the water as "jokes". One day Veth met a halfling man named Yeza Brenatto through a game of truth or dare, and eventually they fell in love. They were later married and had a son, Luc. About three and a half years after Luc's birth, the family was kidnapped by a local goblin clan led by a couple, Drekkit and Khaaz. After being held there for weeks, Veth helped her family to escape, letting her son and husband run ahead while luring their captors away. She was cornered by the goblins and threw a vial of acid in their leader's face, killing him. The goblins recaptured Veth, and Drekkit's widow, Khaaz, took her to an old spellcaster, Isharnai, with instructions to "make her suffer".
+
+Entities:
+- Veth
+- Felderwin
+- Yeza Brenatto
+- Luc
+- Drekkit
+- Khaaz
+- Acid
+- Goblin Clan
+
+Story action: Her peculiarities caused difficulties fitting in
+
+Zero-pronoun story action:
+-----
+PROMPT 9
+Context: A story action is a relevant event within the text provoked by an entity that moves the plot forward in a way. 
+
+Here's a story action extracted from the text. Replace only the possesive and personal pronouns in the story action with the name of the entity reference. Only the pronouns within the sentence should change.
+
+Text: Nott was born a halfling, Revvetha "Veth" Smyt'hh, in the town of Felderwin. Growing up, she was often ridiculed for her peculiarities, which made it difficult for her to fit in, and she had abusive older siblings that used to chase her through the woods, lock her up or dunk her head in the water as "jokes". One day Veth met a halfling man named Yeza Brenatto through a game of truth or dare, and eventually they fell in love. They were later married and had a son, Luc. About three and a half years after Luc's birth, the family was kidnapped by a local goblin clan led by a couple, Drekkit and Khaaz. After being held there for weeks, Veth helped her family to escape, letting her son and husband run ahead while luring their captors away. She was cornered by the goblins and threw a vial of acid in their leader's face, killing him. The goblins recaptured Veth, and Drekkit's widow, Khaaz, took her to an old spellcaster, Isharnai, with instructions to "make her suffer".
+
+Entities:
+- Veth
+- Felderwin
+- Yeza Brenatto
+- Luc
+- Drekkit
+- Khaaz
+- Acid
+- Goblin Clan
+
+Story action: Her peculiarities caused difficulties fitting in
+
+Zero-pronoun story action:
+-----
+PROMPT 10
+Context: A story action is a relevant event within the text provoked by an entity that moves the plot forward in a way. 
+
+Here's a story action extracted from the text. Replace only the possesive and personal pronouns in the story action with the name of the entity reference. Only the pronouns within the sentence should change.
+
+Text: Nott was born a halfling, Revvetha "Veth" Smyt'hh, in the town of Felderwin. Growing up, she was often ridiculed for her peculiarities, which made it difficult for her to fit in, and she had abusive older siblings that used to chase her through the woods, lock her up or dunk her head in the water as "jokes". One day Veth met a halfling man named Yeza Brenatto through a game of truth or dare, and eventually they fell in love. They were later married and had a son, Luc. About three and a half years after Luc's birth, the family was kidnapped by a local goblin clan led by a couple, Drekkit and Khaaz. After being held there for weeks, Veth helped her family to escape, letting her son and husband run ahead while luring their captors away. She was cornered by the goblins and threw a vial of acid in their leader's face, killing him. The goblins recaptured Veth, and Drekkit's widow, Khaaz, took her to an old spellcaster, Isharnai, with instructions to "make her suffer".
+
+Entities:
+- Veth
+- Felderwin
+- Yeza Brenatto
+- Luc
+- Drekkit
+- Khaaz
+- Acid
+- Goblin Clan
+
+Story action: Her peculiarities caused difficulties fitting in
+
+Replaced story action:
+-----
+PROMPT 11
+Substitute the gap on the story action with an entity so that the story action acuratelly represents the text.
+
+Text: Nott was born a halfling, Revvetha "Veth" Smyt'hh, in the town of Felderwin. Growing up, she was often ridiculed for her peculiarities, which made it difficult for her to fit in, and she had abusive older siblings that used to chase her through the woods, lock her up or dunk her head in the water as "jokes". One day Veth met a halfling man named Yeza Brenatto through a game of truth or dare, and eventually they fell in love. They were later married and had a son, Luc. About three and a half years after Luc's birth, the family was kidnapped by a local goblin clan led by a couple, Drekkit and Khaaz. After being held there for weeks, Veth helped her family to escape, letting her son and husband run ahead while luring their captors away. She was cornered by the goblins and threw a vial of acid in their leader's face, killing him. The goblins recaptured Veth, and Drekkit's widow, Khaaz, took her to an old spellcaster, Isharnai, with instructions to "make her suffer".
+
+Entities:
+- Veth
+- Felderwin
+- Yeza Brenatto
+- Luc
+- Drekkit
+- Khaaz
+- Acid
+- Goblin Clan
+
+Story action: _ peculiarities caused difficulties fitting in
+
+Substitution:
+-----
+PROMPT 12
+Context: A story action is a relevant event within the text provoked by an entity that moves the plot forward in a way. 
+
+Here's a story action extracted from the text. Replace only the possesive and personal pronouns in the story action with the name of the entity reference. Only the pronouns within the sentence should change.
+
+Text: Nott was born a halfling, Revvetha "Veth" Smyt'hh, in the town of Felderwin. Growing up, she was often ridiculed for her peculiarities, which made it difficult for her to fit in, and she had abusive older siblings that used to chase her through the woods, lock her up or dunk her head in the water as "jokes". One day Veth met a halfling man named Yeza Brenatto through a game of truth or dare, and eventually they fell in love. They were later married and had a son, Luc. About three and a half years after Luc's birth, the family was kidnapped by a local goblin clan led by a couple, Drekkit and Khaaz. After being held there for weeks, Veth helped her family to escape, letting her son and husband run ahead while luring their captors away. She was cornered by the goblins and threw a vial of acid in their leader's face, killing him. The goblins recaptured Veth, and Drekkit's widow, Khaaz, took her to an old spellcaster, Isharnai, with instructions to "make her suffer".
+
+Entities:
+- Veth
+- Felderwin
+- Yeza Brenatto
+- Luc
+- Drekkit
+- Khaaz
+- Acid
+- Goblin Clan
+
+Story action: Veth and Yeza fell in love and got married
+
+Replaced story action:
+-----

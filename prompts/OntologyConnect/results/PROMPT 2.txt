@@ -1,0 +1,53 @@
+MODEL: TheBloke_vicuna-13B-1.1-GPTQ
+PROMPT 2
+Context: A chapter is a division of a narrative composed by a number of story actions (at least one) that has a similar mood througout the chapter. A story action is a relevant event within the narrative provoked by an entity that moves the plot forward in a way. 
+
+Rewrite the story by substituting the pronouns in the story actions for the relevant entities within that story action.
+
+Entities:
+- Veth
+- Felderwin
+- Yeza Brenatto
+- Luc
+- Drekkit
+- Khaaz
+- Acid
+- Goblin Clan
+
+Story:
+Chapter "Childhood Abuse": Veth experiences abuse from her older siblings
+1. Veth grew up in Felderwin
+2. Her peculiarities caused difficulties fitting in
+3. She experienced abuse from her older siblings
+
+Chapter "Meeting Yeza": Veth meets Yeza and falls in love
+1. Veth met Yeza Brenatto
+2. They fell in love
+
+Chapter "Marriage and Son": Veth marries Yeza and has a son
+1. Veth and Yeza got married
+2. They had a son named Luc
+
+Chapter "Kidnapping": Veth and her family are kidnapped by a goblin clan
+1. Veth and her family were kidnapped
+
+Chapter "Escape and Revenge": Veth helps her family escape and kills Drekkit
+1. Veth helped her family escape
+2. She killed Drekkit with acid
+
+Chapter "Captivity and Torture": Veth is captured again and tortured by Isharnai
+1. Veth was captured
+
+Rewritten story:
+Chapter "Childhood Abuse": The boy, who would later be known as Veth, experienced abuse from his older siblings growing up in Felderwin.
+
+Chapter "Meeting Yeza": The girl, who would later be known as Yeza Brenatto, met the boy and they fell in love.
+
+Chapter "Marriage and Son": The couple got married and had a son named Luc.
+
+Chapter "Kidnapping": The family was taken captive by the Goblin Clan.
+
+Chapter "Escape and Revenge": The mother helped her family escape and killed Drekkit with acid.
+
+Chapter "Captivity and Torture": The woman was captured once more and subjected to torture by Isharnai.
+-----------------------------------------------------------
