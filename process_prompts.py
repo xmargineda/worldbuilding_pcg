@@ -62,11 +62,11 @@ gen_words_data_prop_table = {'appearance':'a list of independent short sentences
                     'material':'a list of materials independent from one another',
                     'objective':'a list of independent short sentences',
                     'organization':'a list of independent short sentences',
-                    'population':'a list of independent short sencences',
+                    'demographic':'a list of independent short sencences',
                     'profession':'a list of independent words',
                     'use':'a list of independent short sentences',
                     'value':'a list of independent short sentences',
-                    'citizens':'a number'}
+                    'population':'a number'}
 
 
 data_property_generator_text = '''Context: A story in a medieval fantasy world is being written and you have to help by coming up with plausible information about a given topic.

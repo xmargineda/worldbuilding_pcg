@@ -8,7 +8,7 @@ class Settlement(Location):
         self.variables.update({
             'economy' : {'values': [], 'description':'The main industries, the most prominent exports and/or imports...', 'type':'data'},
             'demographic' : {'values': [], 'description':'Information about the demographic of population of the settlement', 'type':'data'},
-            'population' : {'values': None, 'description':'Number of citizens in the settlement', 'type':'data'}
+            'population' : {'values': [], 'description':'Number of citizens in the settlement', 'type':'data'}
         })
 
     def add_economy(self, st):

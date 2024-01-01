@@ -183,18 +183,18 @@ def save_ontology(inst, onto):
                         for prop_v in prop_val:
                             if prop_v not in onto_prop_lst:
                                 if isinstance(prop_v,str):
-                                    prop_v = '\'' + prop_v + '\''
-                                if isinstance(prop_v,Thing):
-                                    prop_v = prop_v.variables['onto_instance']['values']
-                                exec(f"onto_inst.{prop}.append({prop_v})")
+                                    prop_v_str = '\'' + prop_v + '\''
+                                elif isinstance(prop_v,Thing):
+                                    prop_v_str = "prop_v.variables['onto_instance']['values']"
+                                else:
+                                    prop_v_str = prop_v
+                                exec(f"onto_inst.{prop}.append({prop_v_str})")
                     else:
                         if isinstance(prop_val,str):
                             prop_val = '\'' + prop_val + '\''
                         exec(f"onto_inst.{prop} = {prop_val}")
-    print('preend save')
+    
     onto.save(file = "ontology/result.owl", format = "rdfxml")
-    print('end save')                    
-
 
 
 def isItDone(instances):
@@ -272,15 +272,15 @@ if __name__ == '__main__':
     global llm_req, llm_res, query_req, query_res
     llm_req = multiprocessing.Queue() #This queue sends the requests to the LLM
     llm_res = multiprocessing.Queue() #This queue sends the formated results of the LLM
-    query_req = Queue() #This queue sends the requests to the LLM
-    query_res = Queue() #This queue sends the formated results of the LLM
+    #query_req = Queue() #This queue sends the requests to the LLM
+    #query_res = Queue() #This queue sends the formated results of the LLM
 
     pr_llm = multiprocessing.Process(target=llm_manager, args=(llm_req, llm_res))
-    th_query = threading.Thread(target=query_manager, args=(query_req, query_res))
+    #th_query = threading.Thread(target=query_manager, args=(query_req, query_res))
 
     try:
         pr_llm.start()
-        th_query.start()
+        #th_query.start()
         #onto = get_ontology("file://ontology/ontoTFG.owl").load()
         onto = get_ontology("file://ontology/ontoTFGinstances.owl").load()
 
@@ -311,11 +311,11 @@ if __name__ == '__main__':
         save_ontology(instances, onto)
         pr_llm.terminate()
         pr_llm.join()
-        th_query.join()
+        #th_query.join()
   
     except KeyboardInterrupt:
         print("Interrupt caught")
         pr_llm.terminate()
         pr_llm.join()
-        th_query.join()
+        #th_query.join()
         save_ontology(instances, onto)
