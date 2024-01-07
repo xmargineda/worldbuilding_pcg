@@ -11,3 +11,17 @@ class Tradition(Event):
             'rituals' : {'values': [], 'description':'What are the rituals and customs involved in this tradition? (if there are any)', 'type':'data', 'prop_reg': 'list'},
             'venue' : {'values': [], 'description':'A location where this tradition is celebrated.', 'type':'entity', 'prop_reg': 'reflexiveList', 'reflect': 'tradition'}
             })
+
+
+    def short_description(self):
+        desc =  f'{self.variables["str_name"]["values"]} is a tradition from the story.'
+        if self.variables["origin"]["values"]:
+            desc += f' {random_list_formater( list(map(lambda x: x.variables["str_name"]["values"], self.variables["origin"]["values"])), 3, 3 )}.'
+        if self.variables["rituals"]["values"]:
+            desc += f' {random_list_formater( list(map(lambda x: x.variables["str_name"]["values"], self.variables["rituals"]["values"])), 3, 3 )}.'
+        if self.variables["venue"]["values"]:
+            desc += f' The tradition is usually celebrated in {self.variables["str_name"]["values"]} {random_list_formater( list(map(lambda x: x.variables["str_name"]["values"], self.variables["venue"]["values"])), 3, 1 )}'
+        if self.variables["isInvolvedIn"]["values"]:
+            desc += f' Here are some relevant occurrences that are involved with the tradition:\n{random_list_formater( list(map(lambda x: x.variables["fact"]["values"], self.variables["isInvolvedIn"]["values"])), 3, 2 )}'
+        
+        return desc

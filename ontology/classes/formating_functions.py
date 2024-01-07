@@ -22,5 +22,9 @@ def random_list_formater(lst, nelements, format):
                 form_list += elm
             elif format == 2:
                 form_list += '-' + elm + '\n'
+            elif format == 3:
+                if not len(form_list) == 0:
+                    form_list +='. '
+                form_list += elm
 
         return form_list
