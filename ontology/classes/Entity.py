@@ -7,22 +7,9 @@ class Entity(Thing):
     def __init__(self):
         super().__init__()
         self.variables.update({
-            'isInvolvedIn' : {'values' : [], 'description':'The facts that the entity is involved in', 'type':'fact'}
+            'isInvolvedIn' : {'values' : [], 'description':'The facts that the entity is involved in', 'type':'fact', 'prop_reg': 'reflexiveList', 'reflect':'isRelatedTo'}
         })
 
-    def add_isInvolvedIn(self, fact):
-        self.variables["isInvolvedIn"]["values"].append(fact)
-        if self not in fact.variables["isRelatedTo"]["values"]:
-            fact.add_isRelatedTo(self)
-
-    def remove_isInvolvedIn(self, fact):
-        self.variables["isInvolvedIn"]["values"].remove(fact)
-        if self in fact.variables["isRelatedTo"]["values"]:
-            fact.remove_isRelatedTo(self)
-
-    def __str__(self):
-        parent_str = super().__str__()
-        return f'{parent_str} isInvolvedIn: {list(map(lambda x: x.variables["fact"]["values"], self.variables["isInvolvedIn"]["values"]))}\n'
 
 
     def short_description(self):

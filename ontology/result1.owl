@@ -309,7 +309,6 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#sibling">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#entityRelatingProperty"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#sibling"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Character"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Character"/>
@@ -753,7 +752,17 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Arcane_Prism">
         <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Item"/>
-        <str_name>Arcane Prism</str_name>
+        <appearance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It emits a faint glow from within its depths</appearance>
+        <appearance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It has been described as &quot;beautiful&quot; and &quot;mesmerizing&quot;</appearance>
+        <appearance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Its surface is smooth and polished, reflecting light in all directions</appearance>
+        <appearance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Others fear its potential for misuse or destruction</appearance>
+        <appearance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Some believe it holds great power and knowledge</appearance>
+        <appearance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Arcane Prism appears as a shimmering, translucent crystal</appearance>
+        <material rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A shimmering, iridescent crystal that seems to contain within itself all colors of the rainbow</material>
+        <material rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It has been said that the Arcane Prism was crafted using rare and exotic materials sourced from far-flung lands</material>
+        <material rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Others speculate that the Arcane Prism may hold within its structure traces of otherworldly substances, such as the remnants of fallen stars or fragments of mythical gemstones</material>
+        <material rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Some believe that the prism was created through an ancient magical process involving the alignment of celestial bodies and the harnessing of powerful elemental forces</material>
+        <str_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arcane Prism</str_name>
     </owl:NamedIndividual>
     
 
@@ -762,7 +771,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Cardun">
         <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Settlement"/>
-        <str_name>Cardun</str_name>
+        <str_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cardun</str_name>
     </owl:NamedIndividual>
     
 
@@ -771,7 +780,21 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Cerise">
         <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#NonMain_Character"/>
-        <str_name>Cerise</str_name>
+        <profession rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alchemy</profession>
+        <profession rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Archery</profession>
+        <profession rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diplomacy</profession>
+        <profession rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Enchantment</profession>
+        <profession rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Healing</profession>
+        <profession rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Herbalism</profession>
+        <profession rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hunting</profession>
+        <profession rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medicine</profession>
+        <profession rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mercenary work</profession>
+        <profession rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Smithing</profession>
+        <profession rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sorcery</profession>
+        <profession rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thievery</profession>
+        <profession rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Training</profession>
+        <profession rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tutoring</profession>
+        <str_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cerise</str_name>
     </owl:NamedIndividual>
     
 
@@ -781,7 +804,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Cledan">
         <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#NonMain_Character"/>
         <description>Cledant is a merchant from Segalia</description>
-        <str_name>Cledan</str_name>
+        <str_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cledan</str_name>
     </owl:NamedIndividual>
     
 
@@ -791,7 +814,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Coelus">
         <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Group"/>
         <description>Coelus is a secret society working in order to maintain the balance of magic</description>
-        <str_name>Coelus</str_name>
+        <str_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coelus</str_name>
     </owl:NamedIndividual>
     
 
@@ -800,7 +823,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Departure_for_Yverun">
         <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Chapter"/>
-        <str_name>Departure for Yverun</str_name>
+        <str_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Departure for Yverun</str_name>
     </owl:NamedIndividual>
     
 
@@ -809,7 +832,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Eyes_of_Hemm">
         <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Group"/>
-        <str_name>Eyes of Hemm</str_name>
+        <str_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eyes of Hemm</str_name>
     </owl:NamedIndividual>
     
 
@@ -818,8 +841,14 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Fiona">
         <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Main_Character"/>
+        <appearance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fiona carries herself with confidence and authority</appearance>
+        <appearance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fiona has long, wild hair that seems to change color depending on the lighting</appearance>
+        <appearance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Her eyes are bright green and seem to hold an intense energy</appearance>
+        <appearance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">She often wears jewelry made from twisted silver wire, which adds to her mystical allure</appearance>
+        <appearance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">She wears a flowy dress made from a shimmering fabric that appears to be woven with magic</appearance>
+        <appearance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sometimes she can be seen wearing a simple circlet around her forehead, adorned with glowing crystals</appearance>
         <description>Fiona is a powerfull sorceress</description>
-        <str_name>Fiona</str_name>
+        <str_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fiona</str_name>
     </owl:NamedIndividual>
     
 
@@ -828,7 +857,20 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Gulian_Woods">
         <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Place"/>
-        <str_name>Gulian Woods</str_name>
+        <appearance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gulian Woods is known for its dense forest cover, making it hard to navigate through without proper guidance</appearance>
+        <appearance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is said that fairies reside near Rainbow Falls, though they are rarely seen by humans</appearance>
+        <appearance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rainbow Falls, a beautiful waterfall cascading down from a height of over 200 feet, can be found deep within the woods</appearance>
+        <appearance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The trees in the woods are tall and broad, with thick foliage blocking out much of the sunlight</appearance>
+        <appearance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">There are no clear paths or trails in the woods, adding to the difficulty of traversing them</appearance>
+        <appearance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Underbrush is abundant, making it difficult to see more than a few feet ahead while walking</appearance>
+        <appearance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wild animals such as deer, wolves, and bears roam the woods, posing a potential danger to travellers</appearance>
+        <flora rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gulian Woods is known for its dense forest cover, making it hard for outsiders to navigate through</flora>
+        <flora rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rare species of plants and animals are said to reside within the woods, but few have been documented</flora>
+        <flora rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The forest floor is covered in a layer of moss and lichen, providing a soft bed for travellers to rest on</flora>
+        <flora rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The trees in the woods are tall and broad, with thick foliage that blocks most sunlight from reaching the ground</flora>
+        <flora rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Undergrowth is scarce due to the shade provided by the canopy above</flora>
+        <flora rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wildflowers dot the forest floor, adding splashes of color to an otherwise dull environment</flora>
+        <str_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gulian Woods</str_name>
     </owl:NamedIndividual>
     
 
@@ -837,7 +879,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Introduction">
         <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Chapter"/>
-        <str_name>Introduction</str_name>
+        <str_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Introduction</str_name>
     </owl:NamedIndividual>
     
 
@@ -846,7 +888,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Meeting_the_Coelus">
         <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Chapter"/>
-        <str_name>Meeting the Coelus</str_name>
+        <str_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meeting the Coelus</str_name>
     </owl:NamedIndividual>
     
 
@@ -855,7 +897,12 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Nion">
         <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#NonMain_Character"/>
-        <str_name>Nion</str_name>
+        <appearance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">He wears a black leather jacket over a white shirt, both torn in places</appearance>
+        <appearance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">His eyes are an intense green color</appearance>
+        <appearance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is mentioned that Nion has a &quot;wild&quot; or unpredictable nature</appearance>
+        <appearance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nion carries a large sword at his side, which he is skilled in using</appearance>
+        <appearance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nion has long, wild hair that seems to change color depending on the lighting</appearance>
+        <str_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nion</str_name>
     </owl:NamedIndividual>
     
 
@@ -864,7 +911,18 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Nogern">
         <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Place"/>
-        <str_name>Nogern</str_name>
+        <fauna rdf:datatype="http://www.w3.org/2001/XMLSchema#string">However, due to overhunting and habitat destruction, many animal populations in Nogern are declining</fauna>
+        <fauna rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Many predators also call Nogern home, such as wolves, bears, and big cats</fauna>
+        <fauna rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nogern is known for its diverse wildlife, including large herbivores like elk and bison</fauna>
+        <fauna rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Some rare species can also be found in Nogern, like the horned rhinoceros and giant eagles</fauna>
+        <fauna rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tiope has been tasked with protecting the magical artifact from intruders who may seek to exploit it, which includes both humans and other creatures</fauna>
+        <flora rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Despite its beauty, the forest can be dangerous, with hidden traps and magical creatures lurking in the shadows</flora>
+        <flora rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In addition to trees, the forest also contains a diverse array of plants, such as ferns, mosses, and wildflowers</flora>
+        <flora rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Many animals call the forest their home, including deer, rabbits, and foxes</flora>
+        <flora rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nogern is known for its lush greenery, particularly its dense forest which covers most of the region</flora>
+        <flora rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Some believe that the magic emanating from the Arcane Prism may have an effect on the flora of Nogern, but this remains unconfirmed</flora>
+        <flora rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The forest is home to various species of trees, including oak, maple, and elm</flora>
+        <str_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nogern</str_name>
     </owl:NamedIndividual>
     
 
@@ -873,9 +931,19 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Samek">
         <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Main_Character"/>
-        <sibling rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Nion"/>
+        <appearance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A longbow rests against his back, and he carries a quiver full of arrows on his hip</appearance>
+        <appearance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">He often travels with a trusty companion, a wolf named Kael</appearance>
+        <appearance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">He wears a leather jerkin over a thick woolen tunic</appearance>
+        <appearance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">His pants are made of sturdy fabric, suitable for traveling through rugged terrain</appearance>
+        <appearance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Samek also has a small dagger sheathed at his waist</appearance>
+        <appearance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Samek has dark brown hair and hazel eyes</appearance>
         <description>Samek is an expert treasure hunter</description>
-        <str_name>Samek</str_name>
+        <dislikes rdf:datatype="http://www.w3.org/2001/XMLSchema#string">He avoids discussing sensitive subjects such as politics and religion</dislikes>
+        <dislikes rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Samek does not like to talk about his past experiences or memories</dislikes>
+        <dislikes rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Samek has no interest in jewellery or other forms of decorative items</dislikes>
+        <dislikes rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The thought of spending time alone in a dark and quiet place makes Samek uneasy</dislikes>
+        <dislikes rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When it comes to food, Samek prefers simple meals over elaborate dishes</dislikes>
+        <str_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Samek</str_name>
     </owl:NamedIndividual>
     
 
@@ -884,7 +952,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Segalia">
         <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Settlement"/>
-        <str_name>Segalia</str_name>
+        <population rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> The current number of citizens living in Segalia is 5,234</population>
+        <str_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Segalia</str_name>
     </owl:NamedIndividual>
     
 
@@ -893,7 +962,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Sonia">
         <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#NonMain_Character"/>
-        <str_name>Sonia</str_name>
+        <str_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sonia</str_name>
     </owl:NamedIndividual>
     
 
@@ -903,7 +972,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Tiope">
         <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#NonMain_Character"/>
         <description>Tiope is an imortal witch</description>
-        <str_name>Tiope</str_name>
+        <str_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tiope</str_name>
     </owl:NamedIndividual>
     
 
@@ -913,7 +982,12 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Yverun">
         <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Item"/>
         <description>Yverun is a powerful magical divinatory item</description>
-        <str_name>Yverun</str_name>
+        <str_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yverun</str_name>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is said that whoever possesses Yverun will gain immense power over the realm</value>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Legend has it that only those pure of heart can wield Yverun without succumbing to its corruptive influence</value>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Many adventurers and necromancers alike have attempted to find and claim Yverun but have failed</value>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The last known location of Yverun was at the Temple of the Moon Goddess, where it was kept as a sacred artifact</value>
+        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yverun has been missing from its rightful owner, Sonia, for many years</value>
     </owl:NamedIndividual>
     
 
@@ -925,7 +999,8 @@
         <isContainedBy rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Introduction"/>
         <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Fiona"/>
         <nextAction rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action2"/>
-        <fact>Fiona is interested in studying magic</fact>
+        <fact rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fiona is interested in studying magic</fact>
+        <str_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></str_name>
     </owl:NamedIndividual>
     
 
@@ -939,7 +1014,8 @@
         <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Fiona"/>
         <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Samek"/>
         <nextAction rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action11"/>
-        <fact>To help Fiona, the Coelus introduced her to Samek.</fact>
+        <fact rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To help Fiona, the Coelus introduced her to Samek.</fact>
+        <str_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></str_name>
     </owl:NamedIndividual>
     
 
@@ -954,7 +1030,8 @@
         <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Samek"/>
         <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Yverun"/>
         <nextAction rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action12"/>
-        <fact>Fiona and Samek travelled to the Gulian Woods to look for Yverun.</fact>
+        <fact rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fiona and Samek travelled to the Gulian Woods to look for Yverun.</fact>
+        <str_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></str_name>
     </owl:NamedIndividual>
     
 
@@ -967,7 +1044,8 @@
         <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Fiona"/>
         <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Samek"/>
         <nextAction rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action13"/>
-        <fact>Fiona and Samek faced a number of challenges</fact>
+        <fact rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fiona and Samek faced a number of challenges</fact>
+        <str_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></str_name>
     </owl:NamedIndividual>
     
 
@@ -981,7 +1059,8 @@
         <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Samek"/>
         <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Sonia"/>
         <nextAction rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action14"/>
-        <fact>Fiona and Samek met Sonia</fact>
+        <fact rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fiona and Samek met Sonia</fact>
+        <str_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></str_name>
     </owl:NamedIndividual>
     
 
@@ -996,7 +1075,8 @@
         <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Sonia"/>
         <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Yverun"/>
         <nextAction rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action15"/>
-        <fact>Sonia directed Fiona and Samek to Yverun</fact>
+        <fact rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sonia directed Fiona and Samek to Yverun</fact>
+        <str_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></str_name>
     </owl:NamedIndividual>
     
 
@@ -1010,7 +1090,8 @@
         <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Fiona"/>
         <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Samek"/>
         <nextAction rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action16"/>
-        <fact>Fiona and Samek divined the position of the Arcane Prism</fact>
+        <fact rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fiona and Samek divined the position of the Arcane Prism</fact>
+        <str_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></str_name>
     </owl:NamedIndividual>
     
 
@@ -1023,7 +1104,8 @@
         <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Arcane_Prism"/>
         <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Nogern"/>
         <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Tiope"/>
-        <fact>The Arcane Prism is being guarded by Tiope in the ruins of Nogern</fact>
+        <fact rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Arcane Prism is being guarded by Tiope in the ruins of Nogern</fact>
+        <str_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></str_name>
     </owl:NamedIndividual>
     
 
@@ -1034,7 +1116,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Action"/>
         <isContainedBy rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Introduction"/>
         <nextAction rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action3"/>
-        <fact>The authorities of Segalia have put strict restrictions on the use of magic.</fact>
+        <fact rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The authorities of Segalia have put strict restrictions on the use of magic.</fact>
+        <str_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></str_name>
     </owl:NamedIndividual>
     
 
@@ -1046,7 +1129,8 @@
         <isContainedBy rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Introduction"/>
         <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Fiona"/>
         <nextAction rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action4"/>
-        <fact>Fiona starts questioning the restrictions.</fact>
+        <fact rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fiona starts questioning the restrictions.</fact>
+        <str_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></str_name>
     </owl:NamedIndividual>
     
 
@@ -1059,7 +1143,8 @@
         <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Cerise"/>
         <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Fiona"/>
         <nextAction rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action5"/>
-        <fact>Fiona talks to Cerise about the restrictions.</fact>
+        <fact rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fiona talks to Cerise about the restrictions.</fact>
+        <str_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></str_name>
     </owl:NamedIndividual>
     
 
@@ -1073,7 +1158,8 @@
         <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Coelus"/>
         <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Fiona"/>
         <nextAction rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action6"/>
-        <fact>Cerise introduces Fiona to the Coelus.</fact>
+        <fact rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cerise introduces Fiona to the Coelus.</fact>
+        <str_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></str_name>
     </owl:NamedIndividual>
     
 
@@ -1088,7 +1174,8 @@
         <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Coelus"/>
         <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Fiona"/>
         <nextAction rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action7"/>
-        <fact>The Coelus explained to Fiona that Cledan was trying to locate the Arcane Prism.</fact>
+        <fact rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Coelus explained to Fiona that Cledan was trying to locate the Arcane Prism.</fact>
+        <str_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></str_name>
     </owl:NamedIndividual>
     
 
@@ -1102,7 +1189,8 @@
         <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Cledan"/>
         <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Coelus"/>
         <nextAction rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action8"/>
-        <fact>The Coelus explained that Cledan installed the restrictions to help him locate the Arcane Prism.</fact>
+        <fact rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Coelus explained that Cledan installed the restrictions to help him locate the Arcane Prism.</fact>
+        <str_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></str_name>
     </owl:NamedIndividual>
     
 
@@ -1116,7 +1204,8 @@
         <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Cledan"/>
         <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Nion"/>
         <nextAction rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action9"/>
-        <fact>Cledan had sent Nion after the Arcane Prism</fact>
+        <fact rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cledan had sent Nion after the Arcane Prism</fact>
+        <str_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></str_name>
     </owl:NamedIndividual>
     
 
@@ -1131,7 +1220,8 @@
         <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Coelus"/>
         <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Fiona"/>
         <nextAction rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action10"/>
-        <fact>The Coelus asked Fiona to seek the Arcane Prism before Cledan could get his hands on it.</fact>
+        <fact rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Coelus asked Fiona to seek the Arcane Prism before Cledan could get his hands on it.</fact>
+        <str_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></str_name>
     </owl:NamedIndividual>
 </rdf:RDF>
 

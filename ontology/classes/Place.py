@@ -6,18 +6,8 @@ class Place(Location):
     def __init__(self):
         super().__init__()
         self.variables.update({
-            'value' : {'values': [], 'description':'Why is the location special within the narrative', 'type':'data'}
+            'value' : {'values': [], 'description':'Why is the location special within the narrative', 'type':'data', 'prop_reg': 'list'}
         })
-
-    def add_value(self, st):
-        self.variables["value"]["values"].append(st)
-
-    def remove_value(self, st):
-        self.variables["value"]["values"].remove(st)
-
-    def __str__(self):
-        parent_str = super().__str__()
-        return f'{parent_str} value: {self.variables["value"]["values"]}\n'
 
     def short_description(self):
         desc = f'{self.variables["str_name"]["values"]} is a place within the story with some kind of relevance.'

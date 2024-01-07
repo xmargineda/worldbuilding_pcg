@@ -6,10 +6,6 @@ class NonMain_Character(Character):
     def __init__(self):
         super().__init__()
 
-    def __str__(self):
-        parent_str = super().__str__()
-        return f'{parent_str}'
-
     def short_description(self):
         desc =  f'{self.variables["str_name"]["values"]} is a character within the story.'
         if self.variables["profession"]["values"]:

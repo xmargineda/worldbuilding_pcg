@@ -6,39 +6,14 @@ class Item(Entity):
     def __init__(self):
         super().__init__()
         self.variables.update({
-            'appearance' : {'values': [], 'description':'The look of this item and any relevant details', 'type':'data'},
-            'material' : {'values': [], 'description':'The materials it is made of', 'type':'data'},
-            'use' : {'values': [], 'description':'What are the different ways this item can be used', 'type':'data'},
-            'value' : {'values': [], 'description':'Why is this item relevant within the story', 'type':'data'}
+            'appearance' : {'values': [], 'description':'The look of this item and any relevant details', 'type':'data', 'prop_reg': 'list'},
+            'material' : {'values': [], 'description':'The materials it is made of', 'type':'data', 'prop_reg': 'list'},
+            'use' : {'values': [], 'description':'What are the different ways this item can be used', 'type':'data', 'prop_reg': 'list'},
+            'value' : {'values': [], 'description':'Why is this item relevant within the story', 'type':'data', 'prop_reg': 'list'},
+            'holder' : {'values': [], 'description':'A character or group that is in possesion of this item', 'type':'entity', 'prop_reg': 'reflexiveList', 'reflect': 'possession'},
+            'placement' : {'values': [], 'description':'A location where the item is residing.', 'type':'entity', 'prop_reg': 'reflexiveList', 'reflect': 'asset'},
+            'usage_event' : {'values': [], 'description':'An event where this item was used (if there is any).', 'type':'entity', 'prop_reg': 'reflexiveList', 'reflect': 'object'}
         })
-
-    def add_appearance(self, st):
-        self.variables["appearance"]["values"].append(st)
-
-    def remove_appearance(self, st):
-        self.variables["appearance"]["values"].remove(st)
-
-    def add_material(self, st):
-        self.variables["material"]["values"].append(st)
-
-    def remove_material(self, st):
-        self.variables["material"]["values"].remove(st)
-
-    def add_use(self, st):
-        self.variables["use"]["values"].append(st)
-
-    def remove_use(self, st):
-        self.variables["use"]["values"].remove(st)
-
-    def add_value(self, st):
-        self.variables["value"]["values"].append(st)
-
-    def remove_value(self, st):
-        self.variables["value"]["values"].remove(st)
-
-    def __str__(self):
-        parent_str = super().__str__()
-        return f'{parent_str} appearance: {self.variables["appearance"]["values"]}\n material: {self.variables["material"]["values"]}\n use: {self.variables["use"]["values"]}\n value: {self.variables["value"]["values"]}\n'
 
     def short_description(self):
         desc = f'{self.variables["str_name"]["values"]} is an object of importance within the story.'

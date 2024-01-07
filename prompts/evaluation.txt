@@ -1,0 +1,70 @@
+############################
+### CLASS CATEGORIZATION ###
+############################
+PROMPT 1: Meh
+PROMPT 2,3: They stop before they even had the chance to try
+PROMPT 4,5: Similar to prompt 1, but still classifies acid as an entity or Item, and goblin clan is Group, when it's not a class
+PROMPT 6: It did the same than prompt 4 and 5, but also started adding it's own text and after that started the classification for some reason?? Maybe should consider adding an end symbol or something like that.
+PROMPT 7: Here the prompt divided Location into Settlement and Place, much better results. Also now it explicitly wrote "*Acid -> Entity (not sure if this should be categorized)"
+PROMPT 8: Changed faction to Group in an attempt to try to not "fight the current"(I just realized i did it halfway)
+PROMPT 9: Same result as 8, there were minor changes, considering to add the Item class to the categorization, and allow Acid to be in the ontology or to try to block it out (due to it's commonality)
+
+
+##############################
+### RELATING CONTENT(TEXT) ###
+##############################
+PROMPT 1: FIRST GENERATIVE PROMPT, tried a prompt about a non-existant person, it did pretty well, except for some inconcistency details (i said this person had a scar on their eye, and it was moved to the eyebrow, which i guess it can be considered in the eye)
+PROMPT 2: Worked, but a bit too similar to the 1
+PROMPT 3: Good!! This one was a more general prompt, but it still did a very good job. Might experiment with another more general prompt tho.
+PROMPT 4: same as 3
+
+PROMPT 5, 6: Good description of the city, while still mainaining a general prompt, for the next iteration, might go for an even more general description
+
+PROMPT 7: Tried to reduce the load of the machine, by only asking for one prompt. I dont think im going to keep going with this route, since it it's performance from 1 to 4 wasn't bad or confused at all
+PROMPT 8: The performance might be worse, due to the facts might not be consistent with each other if it's done like this.
+PROMPT 9: VERY long text, maybe too long considering the kind of facts I'm taking into account
+
+PROMPT 10, 11: Accidentally put generated textS intsead of text, and it generated more than one. Not a bad idea to generate multiples to check which one is better.
+
+##########################
+### CONNECTING CONTENT ###
+##########################
+PROMPT 1, 2, 3: It gives an answer that already has a resolution. The conection should be more simple, acting as assistance instead of co-writing. It does not contradict any of the facts at least, but this might be a simple example.
+PROMPT 4, 5: MUCH shorter, which might be needed. Despite this, it seems to connect the two topics by adding an action, instead of adding a succint description or fact.
+PROMPT 6: TOO OPEN ENDED. It should be definite, determined.
+PROMPT 7: Still to indetermined, but still better than the 6. Still very long.
+PROMPT 8: It's giving more than one possibility, and presenting them as indeterminate.
+PROMPT 9: Instead of connecting them, it looked for a conection, which in this case was more metafisical.
+PROMPT 10-16: It followed the restriction, but also very open ended. Evelyn's prompts did okay-ish.
+PROMPT 17: More determined, and the prompt was okay?
+PROMPT 18: Still determined, but placed the flower NEAR Sagim, despite the restriction establishing that the flower was IN Sagim.
+PROMPT 19-22: I tried to turn it into a list of facts, but i dont think it's working. The problem of having the narrative resolved, resurfaced (or at least the start of the resolution)
+PROMPT 23: Not bad, though i'd like to know if it would work as good if i ran it again
+PROMPT 24: It kind of ignored the restriction?? Not strictly, but at least indirectly. It said the flower is used in a medicinal recipy of the town.
+PROMPT 25: Good i guess. It located the flower in the mines, which is a bit meh considering the restriction.
+PROMPT 26: Bad, it said that Ari heard that the flower was there, but the restriction said that the flower isn't there. Even if it isnt a hard breaking of the restriction it still defeats the purpose of adding it.
+PROMPT 27: Decent, it talked about healing properties of minerals.
+PROMPT 28: Same as PROMPT 45
+PROMPT 29: Very vague... The focus should probably be rethought.
+PROMPT 30: Just plain bad. A dead end. There is nothing there. Ari thought it was there, but it wasnt.
+PROMPT 31: Very vague again... It was a fake out, turned vague.
+
+#####################
+### STORY ACTIONS ###
+#####################
+PROMPT 8: It's okay, but inside the "Escape and Revenge" chapter, Nott meets Yeza and has the son??
+PROMPT 9: EXACTLY like PROMPT 8
+PROMPT 10: I think worse, was too specific. A level of generality is wanted so that we can comunicate as much as possible in little time.
+PROMPT 11, 12: Bad, it only did one story action. I only added "Write as many chapters as you need"
+PROMPT 13: Tried rewriting the prompt and it gave a worse performance. (It didn't give the story actions with an explicit subject)
+PROMPT 14: Better but stopped early
+PROMPT 15: Tried to add descriptors (because it was adding them before without reason) and it only did descriptors
+PROMPT 16, 17: Good separation of chapters, but general descriptors (it did not reference entities). It was cut short
+PROMPT 18a: STORY IS GREAT (small issue that might be fixable without code "pronouns"). Descriptors have the same issue but might be a good contender.
+PROMPT 19: Stoped very quickly?? Bad
+PROMPT 20: It kept going but finished a bit before it should?
+PROMPT 21: I fucked up. It added like made up stuff.
+PROMPT 22: It went back?? Like it went up to a point in the story and then wrote it again
+
+PROMPT 32: The best one so far,
+PROMPT 38: Yeah i skiped a bunch, but this one was too bad. Well, maybe just not good enough

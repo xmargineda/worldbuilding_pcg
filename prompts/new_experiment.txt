@@ -1,0 +1,65 @@
+NEW EXPERIMENT?
+
+Context: A story in a medieval fantasy world is being written and you have to help by coming up with the desired entity that is related to another.
+Generate an a name and a description (short) for a Character that is related to Eyes of Hemm. Assure the generated content doesn't contradict the given information about the topic.
+Relation type: Eyes of Hemm member -> The new Character is a memeber of the group
+Information related to the topic: Eyes of Hemm is a group of people that regurlarly work together within the story.
+Generated content:
+-Name: Rinorin, "The Shadow Watcher"
+-Description: Rinorin is a skilled hunter and tracker who has joined the Eyes of Hemm due to his keen eyesight and ability to see in the dark. He wears a special amulet made from the bones of nocturnal animals that enhances his vision at night, making him an invaluable asset when working on covert operations or scouting missions.
+------------
+Context: A story in a medieval fantasy world is being written and you have to help by coming up with the desired entity that is related to another.
+Generate an a name and a description (short) for a Character that is related to Eyes of Hemm. Assure the generated content doesn't contradict the given information about the topic.
+Relation type: Eyes of Hemm isLead -> The new Character is the leader or one of the leaders of the group
+Information related to the topic: Eyes of Hemm is a group of people that regurlarly work together within the story.
+Generated content:
+-Name: Lirien Hemm
+-Description: Lirien Hemm is the charismatic leader of the Eyes of Hemm, a group of skilled individuals who specialize in covert operations and intelligence gathering. With piercing green eyes and a sharp mind, Lirien commands respect from her team members and inspires them to perform at their best. She has a reputation for being ruthless when necessary but also knows how to be compassionate when the situation calls for it. Her connections within the underworld are extensive and often prove valuable in achieving the group's goals.
+-------------
+Context: A story in a medieval fantasy world is being written and you have to help by coming up with the desired entity that is related to another.
+Generate an a name and a description (short) for a Place that is related to Yverun. Assure the generated content doesn't contradict the given information about the topic.
+Relation type: Yverun's holder -> The item is kept in the new Place
+Information related to the topic:  Yverun is an object of importance within the story. Here's some information about Yverun:
+-Yverun is a powerful magical divinatory item
+ Here are some events that are related to the object:
+-Fiona and Samek travelled to the Gulian Woods to look for Yverun.
+-Sonia directed Fiona and Samek to Yverun
+Generated content:
+-Name: Divinestone Chamber
+-Description: This Place, known as the Divinestone Chamber, is a hidden sanctum located deep within the mountains. It was created specifically to hold and protect Yverun from those who seek to misuse its power. Only individuals with pure hearts and noble intentions can find and enter this sacred chamber. Once inside, visitors must pass a series of tests designed to prove their worthiness before they may lay hands on Yverun.
+------------
+Context: A story in a medieval fantasy world is being written and you have to help by coming up with the desired entity that is related to another.
+Generate an a name and a description (short) for a Character that is related to Yverun. Assure the generated content doesn't contradict the given information about the topic.
+Relation type: Yverun's holder -> The item is kept by the new Character
+Information related to the topic:  Yverun is an object of importance within the story. Here's some information about Yverun:
+-Yverun is a powerful magical divinatory item
+ Here are some events that are related to the object:
+-Fiona and Samek travelled to the Gulian Woods to look for Yverun.
+-Sonia directed Fiona and Samek to Yverun
+Generated content:
+-Name: Veruni
+-Description: A mischievous gnome who possesses Yverun, often using its power for personal gain.
+----------
+Context: A story in a medieval fantasy world is being written and you have to help by coming up with the desired entity that is related to another.
+Generate an a name and a description (two or three simple sencences) for a Character that is related to Yverun. Assure the generated content doesn't contradict the given information about the topic.
+Relation type: Yverun's holder -> The item is kept by the new Character
+Information related to the topic:  Yverun is an object of importance within the story. Here's some information about Yverun:
+-Yverun is a powerful magical divinatory item
+ Here are some events that are related to the object:
+-Fiona and Samek travelled to the Gulian Woods to look for Yverun.
+-Sonia directed Fiona and Samek to Yverun
+Generated content:
+-Name: Eilifrida
+Description: Eilifrida is a skilled enchantress who possesses a keen eye for detail. She has been tasked with keeping Yverun safe from those who seek to misuse its power.
+----------
+Context: A story in a medieval fantasy world is being written and you have to help by coming up with the desired entity that is related to another.
+Generate an a name and a description (two or three simple sencences) for a Character that is related to Yverun. Assure the generated content doesn't contradict the given information about the topic.
+Relation type: Yverun's holder -> The item is kept by the new Character
+Information related to the topic:  Yverun is an object of importance within the story. Here's some information about Yverun:
+-Yverun is a powerful magical divinatory item
+ Here are some events that are related to the object:
+-Fiona and Samek travelled to the Gulian Woods to look for Yverun.
+-Sonia directed Fiona and Samek to Yverun
+Generated content:
+-Name: Kaelaros
+-Description: A mysterious figure who possesses Yverun, guarding it with his life.

@@ -6,32 +6,11 @@ class Settlement(Location):
     def __init__(self):
         super().__init__()
         self.variables.update({
-            'economy' : {'values': [], 'description':'The main industries, the most prominent exports and/or imports...', 'type':'data'},
-            'demographic' : {'values': [], 'description':'Information about the demographic of population of the settlement', 'type':'data'},
-            'population' : {'values': [], 'description':'Number of citizens in the settlement', 'type':'data'}
+            'economy' : {'values': [], 'description':'The main industries, the most prominent exports and/or imports...', 'type':'data', 'prop_reg': 'list'},
+            'demographic' : {'values': [], 'description':'Information about the demographic of population of the settlement', 'type':'data', 'prop_reg': 'list'},
+            'population' : {'values': [], 'description':'Number of citizens in the settlement', 'type':'data', 'prop_reg': 'list'},
+            'citizen' : {'values': [], 'description':'A character that is a citizen of this location', 'type':'entity', 'prop_reg': 'reflexiveList', 'reflect': 'residence'}
         })
-
-    def add_economy(self, st):
-        self.variables["economy"]["values"].append(st)
-
-    def remove_economy(self, st):
-        self.variables["economy"]["values"].remove(st)
-
-    def add_population(self, st):
-        self.variables["population"]["values"].append(st)
-
-    def remove_population(self, st):
-        self.variables["population"]["values"].remove(st)
-
-    def add_demographic(self, n):
-        self.variables["demographic"]["values"] = n
-
-    def remove_demographic(self):
-        self.variables["demographic"]["values"] = None
-
-    def __str__(self):
-        parent_str = super().__str__()
-        return f'{parent_str} economy: {self.variables["economy"]["values"]}\n population: {self.variables["population"]["values"]}\n'
 
     def short_description(self):
         desc = f'{self.variables["str_name"]["values"]} is a location within the story where a group of people live.'

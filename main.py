@@ -12,9 +12,9 @@ from owlready2 import *
 from ontology.classes.Action import Action
 from ontology.classes.Chapter import Chapter
 from ontology.classes.Character import Character
-from ontology.classes.Descriptor import Descriptor
+#from ontology.classes.Descriptor import Descriptor
 from ontology.classes.Entity import Entity
-from ontology.classes.Fact import Fact
+#from ontology.classes.Fact import Fact
 from ontology.classes.Group import Group
 from ontology.classes.Item import Item
 from ontology.classes.Location import Location
@@ -41,20 +41,26 @@ def prompt_user(prompt, options, onlyOne = False):
             edited_options.append(f'{count}. ' + o)
             count += 1
         while True:
-            chosen = input(f'{prompt}\n\n{edited_options}\n\nPlease answer the number of the options you have selected separated by commas (ex. 1, 2, 5, 7): ')
-            chosen = chosen.split(', ')
-            if (len(chosen) <= 1 and onlyOne):
+            print(f'{prompt}\n\n')
+            for opt in edited_options:
+                print(opt)
+            chosen = input('\n\nPlease answer the number of the options you have selected separated by commas (ex. 1, 2, 5, 7): ')
+            chosen = list(map(lambda x: x.strip(), chosen.split(',')))
+            print(chosen)
+            if (len(chosen) <= 1 or not onlyOne):
                 break
 
         res = []
         for n in chosen:
-            res.append(options[n-1])
+            res.append(options[int(n)-1])
         return res
     else:
-        if input(f'{prompt}\n\n{options}\n\nPlease answer yes or no (y/n): ') == 'y':
-            return options
-        else:
-            return [] 
+        while True:
+            input_val = input(f'{prompt}\n\n{options}\n\nPlease answer yes or no (y/n): ')
+            if input_val == 'y':
+                return options
+            elif input_val == 'n':
+                return [] 
 
 
 def search(universe, srch_param, find_group = True):
@@ -113,14 +119,14 @@ def initialize_classes(onto):
             name_prp = str(prp).split('.')[1]
             prp_val = eval('inst.'+name_prp)
             if type(prp_val) == str:
-                exec('obj.add_' + name_prp + '(\'' + str(prp_val) + '\')')
+                obj.add_attribute(atr = name_prp, val =prp_val)
             else:
                 if type(prp_val) != owlready2.prop.IndividualValueList:
                     prp_val = [prp_val]
 
                 for prp_v in prp_val:
                     if not str(prp_v).split('.')[0] == 'ontoTFGinstances':
-                        exec('obj.add_' + name_prp + '(\'' + prp_v + '\')')
+                        obj.add_attribute(atr = name_prp, val =prp_v)
 
         if cl in instances:
             instances[cl].append(obj)
@@ -131,7 +137,7 @@ def initialize_classes(onto):
     for key in instances:
         for val in instances[key]:
              
-            if key in ['Action', 'Descriptor']:
+            if key == 'Action':
                 val_id = (val.variables['fact']['values'])
             else:
                 val_id = (val.variables['str_name']['values'])
@@ -149,7 +155,7 @@ def initialize_classes(onto):
                     for prp_v in prp_val:
                         srch = {}
                         
-                        if str(prp_v.is_a[0]) in ['ontoTFGinstances.Action', 'ontoTFGinstances.Descriptor']:
+                        if str(prp_v.is_a[0]) == 'ontoTFGinstances.Action':
                             srch['fact'] = prp_v.fact
                             identifier = prp_v.fact
                         else:
@@ -158,11 +164,14 @@ def initialize_classes(onto):
                         if identifier not in noRepeatList:
                             srch['class'] = str(prp_v.is_a[0]).split('.')[1]
                             res = search(universe = instances, srch_param = srch, find_group = False)
-
-                            exec('val.add_' + name_prp + '(res)')
+                            val.add_attribute(atr = name_prp, val = res)
             noRepeatList.append(val_id)
+            print(val)
 
     return instances
+
+    #take away noRepeatList if we can
+    #replace the onto object check with the 'data things'
 
 def save_ontology(inst, onto):
     print('start save')
@@ -226,21 +235,25 @@ def data_property_generation_pipeline(obj):
     tpc = obj['entity'].variables['str_name']['values'] + '\''
     
     if tpc[-2] != 's':
-        tpc += 's '
-    tpc += obj['property']
+        tpc += 's'
+    tpc += ' ' + obj['property']
     msg = data_property_generator_text.format(gen_words=gen_words_data_prop_table[obj['property']], topic=tpc , topic_definition = obj['entity'].attribute_description(obj['property']) ,info_topic=obj['entity'].short_description())
     print('start pipe ' + tpc)
     answ = sendAndWaitForLLM({'txt':msg,'temp':2.00, 'max_tokens':300})
     print(answ['txt'])
-    #prompt_user(disabled for now?)
+    
     gen_cont = answ['txt'].split('Generated content:\n')[1].split('\n')
     gen_cont = list(map(lambda x: x.strip('-').strip('.'), gen_cont))
+    
+    
+    gen_cont = prompt_user(prompt = f'The following content has been generated in reference to {tpc}:', options = gen_cont)
     #print(gen_cont)
     #print(obj['entity'])
     #NEXT STEP -> Update
     p = obj['property']
     for c in gen_cont:
-        exec(f'obj[\'entity\'].add_{p}(c)')
+        obj['entity'].add_attribute(atr = p, val = c)
+        #exec(f'obj[\'entity\'].add_{p}(c)')
     #print(obj['entity'])
 
 
@@ -263,7 +276,8 @@ def entity_property_generation_pipeline(obj):
     #NEXT STEP -> Update
     p = obj['property']
     for c in gen_cont:
-        exec(f'obj[\'entity\'].add_{p}(c)')
+        obj['entity'].add_attribute(atr = p, val = c)
+        # exec(f'obj[\'entity\'].add_{p}(c)')
     #print(obj['entity'])
 
 

@@ -6,36 +6,14 @@ class Group(Entity):
     def __init__(self):
         super().__init__()
         self.variables.update({
-            'objective' : {'values': [], 'description':'What is the objective of this organization?', 'type':'data'},
-            'organization' : {'values': [], 'description':'How does the group organize?', 'type':'data'},
-            'leader' : {'values': [], 'description':'Who leads the group?', 'type':'entity'}
+            'objective' : {'values': [], 'description':'What is the objective of this organization?', 'type':'data', 'prop_reg': 'list'},
+            'organization' : {'values': [], 'description':'How does the group organize?', 'type':'data', 'prop_reg': 'list'},
+            'leader' : {'values': [], 'description':'Who leads the group?', 'type':'entity', 'prop_reg': 'reflexiveList', 'reflect': 'leads'},
+            'involvement' : {'values': [], 'description':'A historical incident which this group is involved with', 'type':'entity', 'prop_reg': 'reflexiveList', 'reflect': 'participant'},
+            'member' : {'values': [], 'description':'A character that is a member of the group.', 'type':'entity', 'prop_reg': 'reflexiveList', 'reflect': 'associated_group'},
+            'possession' : {'values': [], 'description':'An item which is in possession of this group.', 'type':'entity', 'prop_reg': 'reflexiveList', 'reflect': 'holder'},
+            'ubication' : {'values': [], 'description':'The current location of this group.', 'type':'entity', 'prop_reg': 'reflexiveList', 'reflect': 'occupant'}
         })
-
-    def add_objective(self, st):
-        self.variables["objective"]["values"].append(st)
-
-    def remove_objective(self, st):
-        self.variables["objective"]["values"].remove(st)
-
-    def add_organization(self, st):
-        self.variables["organization"]["values"].append(st)
-
-    def remove_organization(self, st):
-        self.variables["organization"]["values"].remove(st)
-
-    def add_leader(self, char):
-        self.variables["leader"]["values"].append(char)
-        if self not in char.variables["leads"]["values"]:
-            char.add_leads(self)
-
-    def remove_leader(self, char):
-        self.variables["leader"]["values"].remove(char)
-        if self in char.variables["leads"]["values"]:
-            char.remove_leads(self)
-
-    def __str__(self):
-        parent_str = super().__str__()
-        return f'{parent_str} objective: {self.variables["objective"]["values"]}\n organization: {self.variables["organization"]["values"]}\n leader: {list(map(lambda x: x.variables["str_name"]["values"], self.variables["leader"]["values"]))}\n'
 
 
     def short_description(self):
