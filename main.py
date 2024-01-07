@@ -118,22 +118,17 @@ def initialize_classes(onto):
         for prp in inst.get_properties():
             name_prp = str(prp).split('.')[1]
             prp_val = eval('inst.'+name_prp)
-            if type(prp_val) == str:
-                obj.add_attribute(atr = name_prp, val =prp_val)
-            else:
+            if obj.attribute_type(name_prp) == 'data':
                 if type(prp_val) != owlready2.prop.IndividualValueList:
                     prp_val = [prp_val]
-
                 for prp_v in prp_val:
-                    if not str(prp_v).split('.')[0] == 'ontoTFGinstances':
-                        obj.add_attribute(atr = name_prp, val =prp_v)
-
+                    obj.add_attribute(atr = name_prp, val =prp_v)
+                
         if cl in instances:
             instances[cl].append(obj)
         else:
             instances[cl] = [obj]
 
-    noRepeatList = []
     for key in instances:
         for val in instances[key]:
              
@@ -143,13 +138,9 @@ def initialize_classes(onto):
                 val_id = (val.variables['str_name']['values'])
 
             for prp in val.variables['onto_instance']['values'].get_properties():
-                isObjProp = False
-                for r in prp.range:
-                    if str(r).split('.')[0] == 'ontoTFGinstances':
-                        isObjProp = True
-                        break
-                if isObjProp:
-                    name_prp = str(prp).split('.')[1]
+
+                name_prp = str(prp).split('.')[1] 
+                if val.attribute_type(name_prp) != 'data':
                     prp_val = eval('val.variables[\'onto_instance\'][\'values\'].'+name_prp)
                     
                     for prp_v in prp_val:
@@ -157,21 +148,15 @@ def initialize_classes(onto):
                         
                         if str(prp_v.is_a[0]) == 'ontoTFGinstances.Action':
                             srch['fact'] = prp_v.fact
-                            identifier = prp_v.fact
                         else:
                             srch['str_name'] = prp_v.str_name
-                            identifier =prp_v.str_name
-                        if identifier not in noRepeatList:
-                            srch['class'] = str(prp_v.is_a[0]).split('.')[1]
-                            res = search(universe = instances, srch_param = srch, find_group = False)
-                            val.add_attribute(atr = name_prp, val = res)
-            noRepeatList.append(val_id)
+
+                        srch['class'] = str(prp_v.is_a[0]).split('.')[1]
+                        res = search(universe = instances, srch_param = srch, find_group = False)
+                        val.add_attribute(atr = name_prp, val = res)
             print(val)
 
     return instances
-
-    #take away noRepeatList if we can
-    #replace the onto object check with the 'data things'
 
 def save_ontology(inst, onto):
     print('start save')
