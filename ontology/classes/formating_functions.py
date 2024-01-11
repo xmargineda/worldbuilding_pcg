@@ -17,14 +17,14 @@ def random_list_formater(lst, nelements, format):
         
         for elm in chosen_elm:
             if format == 1:
-                if not len(form_list) == 0:
+                if not len(form_list) == 0 and not len(form_list) == len(chosen_elm)-1:
                     form_list +=', '
+                if len(form_list) == len(chosen_elm)-1 and len(chosen_elm) > 1:
+                    form_list += ' and '
                 form_list += elm
             elif format == 2:
-                form_list += '-' + elm + '\n'
+                form_list += f'-{elm}\n'
             elif format == 3:
-                if not len(form_list) == 0:
-                    form_list +='. '
-                form_list += elm
+                form_list += f' {elm}.'
 
         return form_list

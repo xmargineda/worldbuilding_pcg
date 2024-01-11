@@ -50,27 +50,27 @@ Entities:
 Story:
 '''
 
-gen_words_data_prop_table = {'appearance':'a list of independent short sentences',
-                    'climate':'a list of independent short sentences',
-                    'description':'a list of independent short sentences',
+gen_words_data_prop_table = {'appearance':'a list of different short sentences, that are independent from each other;',
+                    'climate':'a list of different short sentences, that are independent from each other;',
+                    'description':'a list of different short sentences, that are independent from each other;',
                     'dislikes':'a list of independent words',
-                    'economy':'a list of independent short sentences',
-                    'fauna':'a list of independent short sentences',
-                    'flora':'a list of independent short sentences',
-                    'geography':'a list of independent short sentences',
+                    'economy':'a list of different short sentences, that are independent from each other;',
+                    'fauna':'a list of different short sentences, that are independent from each other;',
+                    'flora':'a list of different short sentences, that are independent from each other;',
+                    'geography':'a list of different short sentences, that are independent from each other;',
                     'likes':'a list of independent words',
                     'material':'a list of materials independent from one another',
-                    'objective':'a list of independent short sentences',
-                    'organization':'a list of independent short sentences',
+                    'objective':'a list of different short sentences, that are independent from each other;',
+                    'organization':'a list of different short sentences, that are independent from each other;',
                     'demographic':'a list of independent short sencences',
                     'profession':'a list of independent words',
-                    'use':'a list of independent short sentences',
-                    'value':'a list of independent short sentences',
+                    'use':'a list of different short sentences, that are independent from each other;',
+                    'value':'a list of different short sentences, that are independent from each other;',
                     'population':'a number'}
 
 
 data_property_generator_text = '''Context: A story in a medieval fantasy world is being written and you have to help by coming up with plausible information about a given topic.
-Generate {gen_words} about the topic. Assure the generated content doesn't contradict the given information about the topic.
+Generate {gen_words} in relation to the topic. Assure the generated content doesn't contradict the given information about the topic.
 Topic: {topic} -> {topic_definition}
 Information related to the topic: {info_topic}
 Generated content:

@@ -45,14 +45,17 @@ def prompt_user(prompt, options, onlyOne = False):
             for opt in edited_options:
                 print(opt)
             chosen = input('\n\nPlease answer the number of the options you have selected separated by commas (ex. 1, 2, 5, 7): ')
+            if chosen == '':
+                return []
             chosen = list(map(lambda x: x.strip(), chosen.split(',')))
             print(chosen)
-            if (len(chosen) <= 1 or not onlyOne):
+            if (len(chosen) <= 1 or not onlyOne) and all(list(map(lambda x: x.isdigit(), chosen))):
                 break
+            
 
         res = []
         for n in chosen:
-            res.append(options[int(n)-1])
+                res.append(options[int(n)-1])
         return res
     else:
         while True:

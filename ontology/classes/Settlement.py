@@ -6,18 +6,19 @@ class Settlement(Location):
     def __init__(self):
         super().__init__()
         self.variables.update({
-            'economy' : {'values': [], 'description':'The main industries, the most prominent exports and/or imports...', 'type':'data', 'prop_reg': 'list'},
-            'demographic' : {'values': [], 'description':'Information about the demographic of population of the settlement', 'type':'data', 'prop_reg': 'list'},
-            'population' : {'values': [], 'description':'Number of citizens in the settlement', 'type':'data', 'prop_reg': 'list'},
-            'citizen' : {'values': [], 'description':'A character that is a citizen of this location', 'type':'entity', 'prop_reg': 'reflexiveList', 'reflect': 'residence'}
+            'economy' : {'values': [], 'description':'The main industries, the most prominent exports and/or imports...', 'type':'data', 'contx_expr': 'sentenceList', 'prop_reg': 'list'},
+            'demographic' : {'values': [], 'description':'Information about the demographic of population of the settlement', 'type':'data', 'contx_expr': 'sentenceList', 'prop_reg': 'list'},
+            'population' : {'values': [], 'description':'Number of citizens in the settlement', 'type':'data', 'contx_expr': 'singleWord', 'contx_str':' {val}.', 'prop_reg': 'list'},
+            'citizen' : {'values': [], 'description':'A character that is a citizen of this location', 'type':'entity', 'contx_expr': 'wordList', 'contx_str':' Some of the citizens from {name} are {val}.', 'prop_reg': 'reflexiveList', 'reflect': 'residence'}
         })
 
     def short_description(self):
         desc = f'{self.variables["str_name"]["values"]} is a location within the story where a group of people live.'
-        if self.variables["population"]["values"]:
-            desc += f' There are {self.variables["population"]["values"][0]} living in {self.variables["str_name"]["values"]}.'
+        # if self.variables["population"]["values"]:
+        #     desc += f'{self.variables["str_name"]["values"][0]}'
         if self.variables["description"]["values"]:
-            desc += f' Here\'s some information about {self.variables["str_name"]["values"]}:\n{random_list_formater(self.variables["description"]["values"], 2, 2)}'
+            desc += f'{random_list_formater(self.variables["description"]["values"], 2, 3)}'
+        desc += self.entity_context_gathering(3)
         if self.variables["isInvolvedIn"]["values"]:
             desc += f' Here are some events that are related to {self.variables["str_name"]["values"]}:\n{random_list_formater( list(map(lambda x: x.variables["fact"]["values"], self.variables["isInvolvedIn"]["values"])), 3, 2 )}'
 

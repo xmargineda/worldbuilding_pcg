@@ -6,6 +6,6 @@ class Event(Entity):
     def __init__(self):
         super().__init__()
         self.variables.update({
-            'duration' : {'values': [], 'description':'The average length of the specified event.', 'type':'data', 'prop_reg': 'list'},
-            'object' : {'values': [], 'description':'An item involved in this event.', 'type':'entity', 'prop_reg': 'reflexiveList', 'reflect': 'usage_event'}
+            'duration' : {'values': [], 'description':'The average length of the specified event.', 'type':'data', 'contx_expr': 'sentenceList', 'prop_reg': 'list'},
+            'object' : {'values': [], 'description':'An item involved in this event.', 'type':'entity', 'contx_expr': 'wordList', 'contx_str':' During {name}, {val} got involved.', 'prop_reg': 'reflexiveList', 'reflect': 'usage_event'}
             })
