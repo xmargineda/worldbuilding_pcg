@@ -1,0 +1,409 @@
+---------TEST 5_0--------------
+
+------Entities:------
+🌀The Arcane Conclave of Eldrida
+type: Group
+member: Fiona
+description:
+- "They meet at regular intervals in secret locations throughout the realm, where they share their findings and collaborate on new projects"
+- "🌀The Arcane Conclave of Eldrida is an exclusive group of powerful sorcerers, who gather together to discuss their research on magical phenomena"
+- "Members of this group include Fiona, who seeks to uncover hidden knowledge about the arcane arts"
+
+
+The_Balance_Restored
+type: Historic_Incident
+participant: Coelus
+description:
+- "They worked alongside other groups and individuals to prevent further damage and ensure that the magical realm remained stable"
+- "As part of their efforts, they uncovered a long-forgotten artifact that held great power and significance in maintaining the balance of magic"
+- "The Coelus were instrumental in restoring the balance of magic after an event caused widespread disruption"
+
+
+Eldrid_Stormchaser
+type: NonMain_Character
+sibling: Sonia
+description:
+- "Despite their connection to Sonia, Eldrid maintains a sense of independence and often operates separately from her group"
+- "They possess a deep understanding of the natural world and its many secrets"
+- "Eldrid is a skilled tracker who has honed their abilities through years of experience"
+
+
+Erantha
+type: NonMain_Character
+parent: Nion
+description:
+- "Despite her reputation as a law abiding citizen, Erantha is known to be just as skilled as any other treasure hunter when it comes to navigating dangerous terrain and uncovering hidden riches"
+- "She inherited her mother's adventurous spirit and her father's cunning and resourcefulness"
+- "Erantha is Nion's daughter, who has followed her father's footsteps into treasure hunting but unlike him she always stays on the right side of the law"
+
+
+------Data:------
+Samek
+likes: "Exploration"
+
+
+---------TEST 5_1--------------
+
+------Entities:------
+Arcadia
+type: Settlement
+citizen: Tiope
+description:
+- "The residents of Arcadia take pride in their community's ability to maintain order and safety amidst chaos"
+- "Many travelers pass through Arcadia on their way to other destinations, seeking refuge from the dangers of the surrounding area"
+- "Arcadia is known for its peaceful atmosphere, despite being located near dangerous ruins"
+
+
+Auric_Thornblade
+type: NonMain_Character
+child: Cerise
+description:
+- "Auric had a son named Arin, who would eventually become the ancestor of Cerise"
+- "Auric Thornblade was a powerful warrior who lived during the time when magic was still strong in the land"
+- "He was known for his bravery, strength, and skill on the battlefield"
+
+
+Diviner_Keth
+type: NonMain_Character
+associated_group: Eyes_of_Hemm
+description:
+- "Despite being a relatively new addition to the group, Diviner Keth has already proven to be a valuable asset to Eyes of Hemm, providing crucial insights that have helped the group avoid several disasters"
+- "Diviner Keth is known for their unique ability to interpret omens and visions, which they use to guide the group's actions"
+- "Diviner Keth is a member of Eyes of Hemm, an organization led by Sonia that predicts and attempts to prevent tragedies in the world"
+
+------Data:------
+Diviner_Keth
+likes: "Prevention"
+
+Tiope
+profession: "Druid"
+
+---------TEST 5_2--------------
+
+------Entities:------
+
+Eldrida
+type: Settlement
+occupant: Fiona
+description: "Eldrida is known for its beautiful gardens, which are said to be enchanted"
+
+
+The_Merchant's_Guild
+type: Group
+leader: Cledan
+description:
+- "Members of the guild often work together to ensure fair trade practices and protect their interests against outside threats"
+- "Led by Cledan, the guild seeks to promote economic prosperity and stability across the land"
+- "The Merchant's Guild is composed of various merchants, traders, and business owners who operate throughout the realm of Eldoria"
+
+
+Tiope's_Imprisonment
+type: Historic_Incident
+participant: Tiope
+description:
+- "After several days of intense fighting, Tiope managed to break free from her prison and escape with the Arcane Prism still safely in her possession"
+- "Tiope, who was guarding the Arcane Prism in the ruins of Nogern, was captured by unknown assailants and imprisoned"
+- "The captors demanded that she hand over the Arcane Prism, but Tiope refused and instead used her magic to summon aid from allies"
+
+------Data:------
+Eldrida
+flora: "Fiona's secret garden is said to contain exotic plants from far off lands, carefully tended to by her personal gardeners"
+
+Nogern:
+fauna: "Smaller predators like wolves and bears also inhabit the region"
+
+---------TEST 5_3--------------
+
+------Entities:------
+Diviner_Keth
+type:
+associated_group: Eyes_of_Hemm
+description:
+- "Despite being a relatively new addition to the group, Diviner Keth has already proven to be a valuable asset to Eyes of Hemm, providing crucial insights that have helped the group avoid several disasters"
+- "Diviner Keth is known for their unique ability to interpret omens and visions, which they use to guide the group's actions"
+- "Diviner Keth is a member of Eyes of Hemm, an organization led by Sonia that predicts and attempts to prevent tragedies in the world"
+
+
+The_Whispers_of_the_Enchanted_Grove
+type: Prophecy
+location: Gulian_Woods
+description:
+- "It also states that the path to fulfillment lies through the hands of a chosen few who must unite to break the curse that binds them all"
+- "This prophecy mentions that the darkness will be lifted from the hearts of men when the one true king steps forth from the shadows of time"
+- "The Whispers of the Enchanted Grove speaks of an ancient power awakening deep within the heart of the mystic woods"
+
+
+Ørnenes_Løfte
+type: Group
+involvement: The_Fall_of_Nogern
+description:
+- "Ørnenes Løfte was formed during the turmoil caused by The Fall of Nogern"
+- "They believe in protecting the innocent citizens from the chaos caused by the collapse of Nogern, even if it means taking on dangerous missions themselves"
+- "This group is known for their skilled fighters who are trained in both melee and ranged combat"
+
+------Data:------
+Nogern
+climate: "Tiope uses magic to keep the interior of Nogern warm despite the cold temperatures outside"
+
+Sonia
+likes: "Eyes of Hemm"
+
+
+---------TEST 10_0--------------
+
+------Entities:------
+Elvendom
+type: Location
+subsection: Luminaria
+description:
+- "It is known for its lush forest and rolling hills"
+- "Elvendom is located north-east of Luminaria"
+- "Many travelers pass through Elvendom on their way to other destinations"
+
+
+Luminaria
+type: Settlement
+occupant: Cerise
+description:
+- "Population: Small but diverse group of people who live there"
+
+
+Nalondria
+type: NonMain_Character
+child: Samek
+description:
+- "She was known for her ability to create magical artifacts and enchantments that were said to be unmatched in their power and beauty"
+- "Her legacy lives on through her descendants, including Samek, who inherited her gift for magic and continues to use it to this day"
+- "Nalondria was a powerful wizard who lived during the time when magic was still strong in the land, before the age of technology took over"
+
+
+The_Brotherhood_of_Lost_Treasures
+type: Group
+member: Samek
+description:
+- "The Brotherhood of Lost Treasures is known for its strict code of conduct, which includes never revealing the location of discovered treasures to outsiders and always respecting the cultural significance of any artifacts they come across"
+- "Members of the Brotherhood of Lost Treasures work together to gather clues, solve riddles, and overcome obstacles in their quest to find valuable items that have been long forgotten or thought to be lost forever"
+- "The Brotherhood of Lost Treasures is composed of skilled adventurers, experts in various fields such as geography, history, and cryptography who share Samek's passion for uncovering lost artifacts and hidden treasures"
+
+
+The_Eye_of_Nion
+type: Place
+occupant: Nion
+description:
+- "Location: On top of a mountain, overlooking a vast valley below"
+- "Purpose: Serves as both a hideout and base of operations for Nion during his treasure hunting expeditions"
+- "Features: An intricate network of tunnels and chambers carved into the stone, equipped with traps and defenses to protect its secrets from outsiders"
+
+------Data:------
+Cardun
+fauna: "The forests surrounding Cardun are home to large herds of deer"
+
+Nogern
+fauna: "Tiope, while not native to the region, has made itself at home in Nogern and can often be seen perched on the ruins, watching over the prism"
+
+The_Fall_of_Nogern
+duration: "The Fall of Nogern lasted for approximately 10 days before it was fully destroyed"
+
+The_Gilded_Trade
+rituals: "A parade featuring decorated floats and costumed participants takes place during the Gilded Trade"
+
+Yverun
+material: "Yverun is made of a combination of rare metals, including gold, silver, copper, and brass. These metals were mined from deep within the earth and had to be refined using ancient alchemical processes"
+
+---------TEST 10_1--------------
+
+------Entities:------
+Aethelric_Divinestone
+type: NonMain_Character
+child: Sonia
+description
+- "Aethelric Divinestone is a descendant of an ancient line of powerful seers who were once revered throughout the kingdom for their ability to see into the future"
+- "Aethelric Divinestone is a powerful wizard who lives deep in the mountains"
+"He is known for his skill in divination magic and has been consulted by many leaders in the land for important decisions"
+"Aethelric Divinestone is said to possess a magical artifact passed down through generations in his family, which enhances his already impressive abilities to divine the future"
+
+
+The_Incident_at_the_Library_of_Celestia
+type: Historic_Incident
+participant: Cerise
+description:
+- "Takes place in the Library of Celestia, an ancient repository of knowledge located on Mount Celestia"
+- "Involves Cerise, who is a studious mage from the city of Segalia"
+- "Occurs when a group of rogue mages attempts to steal powerful magical artifacts from the library, causing chaos and destruction"
+
+
+Celestial_Chaos
+type: Place
+event: The_Incident_at_the_Library_of_Celestia
+description
+- "Condition: Currently uninhabitable due to the aftermath of the recent attack"
+- "Significance: Serving as a reminder of the dangers of magic misuse and the consequences it can bring upon innocent people"
+- "Location: On Mount Celestia, near the site of The Incident at the Library of Celestia"
+
+Nogernian_Mystic_Rites
+type: Tradition
+venue: Nogern
+description
+- "Participation in the Nogernian Mystic Rites is believed to bring insight into the secrets of the arcane, drawing forth the wisdom of the long forgotten mage civilization"
+- "Led by Tiope, who guards the Arcane Prism deep inside Nogern, the rituals aim to unlock hidden knowledge and power from the remnants of the past"
+- "Regularly held at Nogern, these rites celebrate the ancient magic of the lost civilization once resident here"
+
+The_Adventurers'_Guild_of_Nion.
+type: Group
+leader: Nion
+description:
+- "The Adventurers' Guild of Nion is composed of skilled individuals who share similar goals, values, and interests"
+- "Led by Nion, the group is formed to support each other on their various quests and expeditions while also promoting the discovery and preservation of knowledge and artifacts from around the realm"
+- "Members come from diverse backgrounds but are united by their passion for adventure and desire to make a positive impact on the world they explore"
+
+<unnamed_location>
+type: Location
+event: The_Fall_of_Nogern
+description:
+- "It was the site where the once-great city of Nogern stood before its collapse during The Fall of Nogern"
+- "Now it serves as an eerie reminder of what once was, attracting adventurers seeking answers about the mysterious events surrounding The Fall of Nogern"^^xsd:string
+
+🌳Eldrid_Greenwood
+type: NonMain_Character
+residence
+Cardun
+description:
+- "Eldrid is known for their exceptional farming skills, which they use to support the community"
+- "They are well-liked among the citizens of Cardun due to their kind nature and willingness to lend a helping hand"
+- "Despite living in a small town, Eldrid has big dreams of traveling the world and experiencing different cultures"
+
+------Data:------
+
+Gulian_Woods
+geography: "A small stream runs through the heart of the woods"
+
+The_Gilded_Trade
+rituals: "A group of people dressed in colorful robes perform a dance around a large bonfire as part of the opening ceremony for the Gilded Trade"
+
+<unnamed_location>
+fauna: "It is not uncommon for travelers passing through the region to encounter packs of wild dogs or cats"
+
+
+---------TEST 20_0--------------
+
+------Entities:------
+Sibylla_Rainwood
+type: NonMain_Character
+sibling: Cledan
+description:
+- "She has dark brown hair and hazel eyes, often wears simple yet elegant clothing"
+- "Her family was once wealthy but lost most of their fortune due to unfortunate business ventures"
+- "Sibylla is a half-elf, born to an elven mother and human father"
+
+
+Auric_Thornblade
+type: NonMain_Character
+child: Sibylla_Rainwood
+description:
+- "Auric Thornblade is a descendant of a noble bloodline from the kingdom of Eldrida"
+- "He possesses striking blue eyes and golden blonde hair, which he often keeps neatly styled"
+- "Auric wields a sword named "Thornblade" in battle, said to be passed down through generations of his family"
+
+
+Ellowynn's_Moonstone
+type: Item
+holder: Sibylla_Rainwood
+description:
+- "Small, smooth moonstone adorned with delicate silver filigree"
+- "Engraved with intricate patterns on its surface, depicting various celestial bodies and mythical creatures"
+- "Believed to bring good luck and protection to its owner when worn close to the heart"
+
+
+Eldrid
+type: Settlement
+citizen: Samek
+description:
+- "Many merchants and craftsmen from all over the realm come to Eldrid to sell their goods and services"
+- "Eldrid is known for its impressive architecture, featuring tall stone buildings with intricate carvings and decorations"
+- "Despite its bustling marketplace, Eldrid maintains a peaceful atmosphere due to strict laws enforced by the local guardians"
+
+
+Gulian_Forest_Heart
+type: Item
+placement: Gulian_Woods
+description:
+- "It has been said that whoever possesses the Gulian Forest Heart holds immense power over the entire forest and all its inhabitants"
+- "Fiona had stumbled upon it while searching for Yverun, but she was unable to take it from its pedestal due to its powerful magic wards"
+- "The Gulian Forest Heart is an ancient artifact found deep inside the heart of the Gulian Woods"
+
+Shadowfall_Valley
+type: Location
+subsection: Nogern
+description:
+- "Shadowfall Valley is located deep within the mountains surrounding Nogern, it can only be accessed through treacherous paths known only to locals"
+- "Many brave adventurers have attempted to enter Shadowfall Valley, but few have returned with tales of strange magical energies and ghostly apparitions that haunt the valley"
+- "It is rumored that the shadowy creatures that haunt the area were once servants of the ancient mage who built Nogern but rebelled against their master after discovering forbidden knowledge"
+
+
+Shimmering_Merchant's_Emblem
+type: Item
+usage_event: The_Gilded_Trade
+description:
+- "It is said to bring good luck to those who display it during the trading events"
+
+
+Studious_Mage_Parents
+type: NonMain_Character
+parent: Cerise
+description:
+- "They come from a family of mages, and it is likely that they inherited their magical abilities from one or both of their parents"
+- "This character is a student of magic who takes their studies very seriously, often spending long hours pouring over tomes and experimenting with spells"
+- "As a member of Coelus, this character may be involved in various group activities such as research projects, spell creation, and possibly even field missions"
+
+
+The_Adventurers'_Guild_of_Esteros
+type: Group
+member: Nion
+description:
+"Members often work together on various expeditions and quests to uncover lost relics and artifacts throughout the realm"^^xsd:string
+
+
+The_Brotherhood_of_Lost_Relics
+type: Group
+leader: Nion
+description:
+- "Members of this group seek out ancient relics and artifacts from long forgotten civilizations"
+
+
+The_Hidden_Lair
+type: Place
+occupant: The_Adventurers'_Guild_of_Esteros
+description:
+- "The entrance to the lair is well-hidden and can only be found through a secret doorway known only to the guild's members"
+- "The Hidden Lair is an underground facility located beneath the city of Esteros"
+description
+- "It has been built recently by the Adventurer's Guild of Esteros as their new headquarters"
+
+------Data:------
+
+Cardun
+appearance: "The houses in Cardun are made of wood and stone"
+
+Cerise
+profession: "Tailor"
+
+Eyes_of_Hemm
+objective: "They use various methods such as scrying, augury, and prophecy to gather information"
+
+Nogern
+appearance: "Despite the danger, adventurers occasionally venture into Nogern seeking to uncover its secrets or acquire the powerful artifacts said to be hidden within"
+
+Segalia
+fauna: "The rhinoceroses of Segalia are herbivores and are often used for heavy labor due to their strength"
+
+Shimmering_Merchant's_Emblem
+use: "The Shimmering Merchant's Emblem is often used as a form of currency when conducting business deals between merchants during the Gilded Trade festivities"
+
+The_Brotherhood_of_Lost_Relics
+objective: "Some members of the Brotherhood of Lost Relics use their skills as thieves or rogues to acquire the necessary tools for retrieval"
+
+Tiope
+profession: "Enchanter"
+
+Yverun
+value: "The sorcerer imbued Yverun with his own knowledge and power, making it capable of revealing hidden truths and predicting future events"

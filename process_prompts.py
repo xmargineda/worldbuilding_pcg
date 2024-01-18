@@ -53,20 +53,25 @@ Story:
 gen_words_data_prop_table = {'appearance':'a list of different short sentences, that are independent from each other;',
                     'climate':'a list of different short sentences, that are independent from each other;',
                     'description':'a list of different short sentences, that are independent from each other;',
-                    'dislikes':'a list of independent words',
+                    'dislikes':'a list of independent words (no explanation needed)',
                     'economy':'a list of different short sentences, that are independent from each other;',
                     'fauna':'a list of different short sentences, that are independent from each other;',
                     'flora':'a list of different short sentences, that are independent from each other;',
                     'geography':'a list of different short sentences, that are independent from each other;',
-                    'likes':'a list of independent words',
+                    'likes':'a list of independent words (no explanation needed)',
                     'material':'a list of materials independent from one another',
                     'objective':'a list of different short sentences, that are independent from each other;',
                     'organization':'a list of different short sentences, that are independent from each other;',
                     'demographic':'a list of independent short sencences',
-                    'profession':'a list of independent words',
+                    'profession':'a list of independent professions (with no explanation)',
                     'use':'a list of different short sentences, that are independent from each other;',
                     'value':'a list of different short sentences, that are independent from each other;',
-                    'population':'a number'}
+                    'population':'a number',
+                    'duration': 'a single sentence',
+                    'frequency':'a list of different short sentences, that are independent from each other;',
+                    'origin':'a list of different short sentences, that are independent from each other;',
+                    'rituals':'a list of different short sentences, that are independent from each other;',
+                    'time_elapsed': 'a single sentence'}
 
 
 data_property_generator_text = '''Context: A story in a medieval fantasy world is being written and you have to help by coming up with plausible information about a given topic.
@@ -76,12 +81,21 @@ Information related to the topic: {info_topic}
 Generated content:
 -'''
 
-entity_property_generator_text = '''Context: A story in a medieval fantasy world is being written and you have to help by coming up with the desired entity that is related to another.
-Generate an a name and a description (two or three simple sencences) for a {entity_type} that is related to {topic_entity}. Assure the generated content doesn't contradict the given information about the topic.
-Relation type: {topic} -> {topic_definition}
-Information related to the topic:  {info_topic}
-Generated content:
--Name: '''
+entity_property_generator_name_text = '''Context: A story in a medieval fantasy world is being written and you have to help by coming up with a name for the new entity that is related to another.
+Generate one fantasy name for a new {entity_type}. Assure the generated content doesn't contradict the given information about the topic. Do not explain any context or inspiration; just give the name.
+This new {entity_type} is connected to {topic_entity} the following way: {topic} -> {topic_definition}
+Information about {topic_entity}: {info_topic}
+New {entity_type} name: '''
+
+entity_property_generator_description_text = '''Context: A story in a medieval fantasy world is being written and you have to help by coming up with a general description about the new entity that is related to another.
+Generate a bullet list of two or three simple sencences as a description for a new {entity_type}. Assure the generated content doesn't contradict the given information about the topic.
+This new {entity_type} is connected to {topic_entity} the following way: {topic} -> {topic_definition}
+Information about {topic_entity}: {info_topic}
+Name of the new {entity_type}: {name}
+New {entity_type} description bullet list:
+'''
+
+
 
 
 debug_txt = '''Context: A chapter is a division of a narrative composed by a number of story actions (at least one) that has a similar mood througout the chapter. A story action is a relevant event within the narrative provoked by an entity that moves the plot forward in a way.

@@ -753,6 +753,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Arcane_Prism">
         <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Item"/>
+        <holder rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Tiope"/>
+        <placement rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Nogern"/>
+        <description>It is an item of great power but with it&apos;s actual use often mistified</description>
         <str_name>Arcane Prism</str_name>
     </owl:NamedIndividual>
     
@@ -762,6 +765,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Cardun">
         <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Settlement"/>
+        <description>Cardun is a small town rural village</description>
         <str_name>Cardun</str_name>
     </owl:NamedIndividual>
     
@@ -771,6 +775,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Cerise">
         <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#NonMain_Character"/>
+        <description>Ceries is a studious mage from the city of Segalia</description>
         <str_name>Cerise</str_name>
     </owl:NamedIndividual>
     
@@ -790,6 +795,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Coelus">
         <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Group"/>
+        <member rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Cerise"/>
         <description>Coelus is a secret society working in order to maintain the balance of magic</description>
         <str_name>Coelus</str_name>
     </owl:NamedIndividual>
@@ -809,6 +815,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Eyes_of_Hemm">
         <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Group"/>
+        <holder rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Yverun"/>
+        <description>The Eyes of Hemm is a group of diviners and prophets that forsee and attempt to prevent tragic events of the world</description>
         <str_name>Eyes of Hemm</str_name>
     </owl:NamedIndividual>
     
@@ -828,6 +836,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Gulian_Woods">
         <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Place"/>
+        <description>The Gulian Woods are a dense magical forest</description>
         <str_name>Gulian Woods</str_name>
     </owl:NamedIndividual>
     
@@ -855,6 +864,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Nion">
         <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#NonMain_Character"/>
+        <description>Nion is an explorer gone rogue</description>
+        <profession>Treasure Hunter</profession>
         <str_name>Nion</str_name>
     </owl:NamedIndividual>
     
@@ -864,6 +875,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Nogern">
         <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Place"/>
+        <description>The ruins of Nogern are a series of abandoned structures from an old civilization of mages</description>
         <str_name>Nogern</str_name>
     </owl:NamedIndividual>
     
@@ -884,6 +896,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Segalia">
         <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Settlement"/>
+        <description>Segalia is the big capital city of the world, where trade comes from everywhere</description>
         <str_name>Segalia</str_name>
     </owl:NamedIndividual>
     
@@ -893,7 +906,33 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Sonia">
         <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#NonMain_Character"/>
+        <leads rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Eyes_of_Hemm"/>
+        <possession rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Yverun"/>
+        <ubication rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Gulian_Woods"/>
+        <description>Sonia is a powerfull diviner, but decided to keep away from society</description>
         <str_name>Sonia</str_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#The_Fall_of_Nogern -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#The_Fall_of_Nogern">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Historic_Incident"/>
+        <object rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Arcane_Prism"/>
+        <description>The Fall of Nogern refers to the event of the colapse of the city of Nogern, due to unknown reasons</description>
+        <str_name>The Fall of Nogern</str_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#The_Gilded_Trade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#The_Gilded_Trade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Tradition"/>
+        <venue rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Segalia"/>
+        <description>The Gilded Trade is a festivity in which a big market event is held, to celebrate the trade coming from arround the contintent</description>
+        <str_name>The Gilded Trade</str_name>
     </owl:NamedIndividual>
     
 
@@ -902,7 +941,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Tiope">
         <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#NonMain_Character"/>
-        <description>Tiope is an imortal witch</description>
+        <ubication rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Nogern"/>
+        <description>Tiope is an imortal witch that guards the Arcane Prism</description>
         <str_name>Tiope</str_name>
     </owl:NamedIndividual>
     
@@ -995,8 +1035,9 @@
         <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Samek"/>
         <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Sonia"/>
         <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Yverun"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#The_Prism&apos;s_Decay"/>
         <nextAction rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action15"/>
-        <fact>Sonia directed Fiona and Samek to Yverun</fact>
+        <fact>Sonia directed Fiona and Samek to Yverun and told them about the profecy of the Prism&apos;s Decay</fact>
     </owl:NamedIndividual>
     
 
@@ -1033,8 +1074,9 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action2">
         <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Action"/>
         <isContainedBy rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Introduction"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#The_Gilded_Trade"/>
         <nextAction rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action3"/>
-        <fact>The authorities of Segalia have put strict restrictions on the use of magic.</fact>
+        <fact>The authorities of Segalia have put strict restrictions on the use of magic before the festivities of the Guilded Trade.</fact>
     </owl:NamedIndividual>
     
 
@@ -1132,6 +1174,18 @@
         <isRelatedTo rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Fiona"/>
         <nextAction rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#action10"/>
         <fact>The Coelus asked Fiona to seek the Arcane Prism before Cledan could get his hands on it.</fact>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#The_Prism&apos;s_Decay -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#The_Prism&apos;s_Decay">
+        <rdf:type rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Prophecy"/>
+        <object rdf:resource="http://www.semanticweb.org/x3500/ontologies/2023/9/TFGOntology#Arcane_Prism"/>
+        <description>This profecy foretells that the Arcane Prism will be torn asunder by it&apos;s future wielder, due to the powerfull magical spell used to cast it</description>
+        <origin>It was profecized by Sonia using Yverun</origin>
+        <str_name>The Prism&apos;s Decay</str_name>
     </owl:NamedIndividual>
 </rdf:RDF>
 

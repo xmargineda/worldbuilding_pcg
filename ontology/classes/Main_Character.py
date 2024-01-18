@@ -8,8 +8,6 @@ class Main_Character(Character):
 
     def short_description(self):
         desc =  f'{self.variables["str_name"]["values"]} is a main character within the story.'
-        # if self.variables["profession"]["values"]:
-        #     desc += f' {self.variables["str_name"]["values"]} works as a {random_list_formater(self.variables["profession"]["values"], 3, 1)}.'
         if self.variables["description"]["values"]:
             desc += f'{random_list_formater(self.variables["description"]["values"], 3, 3)}'
         desc += self.entity_context_gathering(3)

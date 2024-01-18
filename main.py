@@ -1,9 +1,12 @@
+import re
 import time
+import sys
 import random
 import multiprocessing
 import threading
 from queue import Queue
 import requests
+from random import sample 
 from llm_manager import *
 from query_manager import *
 from queue import *
@@ -12,9 +15,7 @@ from owlready2 import *
 from ontology.classes.Action import Action
 from ontology.classes.Chapter import Chapter
 from ontology.classes.Character import Character
-#from ontology.classes.Descriptor import Descriptor
 from ontology.classes.Entity import Entity
-#from ontology.classes.Fact import Fact
 from ontology.classes.Group import Group
 from ontology.classes.Item import Item
 from ontology.classes.Location import Location
@@ -22,7 +23,12 @@ from ontology.classes.Main_Character import Main_Character
 from ontology.classes.NonMain_Character import NonMain_Character
 from ontology.classes.Place import Place
 from ontology.classes.Settlement import Settlement
+from ontology.classes.Event import Event
+from ontology.classes.Prophecy import Prophecy
+from ontology.classes.Historic_Incident import Historic_Incident
+from ontology.classes.Tradition import Tradition
 from ontology.classes.Thing import Thing
+from ontology.classes.formating_functions import random_list_formater
 
 
 ontology_tree = {'Thing':['Chapter','Entity','Fact'], 'Chapter':[], 'Entity':['Character','Event','Group','Item','Location'], 'Character':['Main_Character', 'NonMain_Character'], 'Event':[], 'Group':[], 'Item':[], 'Location':['Settlement', 'Place'], 'Settlement':[], 'Place':[], 'Fact':['Action', 'Descriptor'], 'Action':[], 'Descriptor':[]}
@@ -63,7 +69,7 @@ def prompt_user(prompt, options, onlyOne = False):
             if input_val == 'y':
                 return options
             elif input_val == 'n':
-                return [] 
+                return None
 
 
 def search(universe, srch_param, find_group = True):
@@ -98,11 +104,8 @@ def search(universe, srch_param, find_group = True):
     else:
         return None
             
-        
-        #check if the search parameter are followed
 
 def recursive_superclass(cla):
-    print(cla)
     res = []
     res.append(str(cla).split('.')[-1].strip('\'>'))
     for c in cla.__bases__:
@@ -157,16 +160,17 @@ def initialize_classes(onto):
                         srch['class'] = str(prp_v.is_a[0]).split('.')[1]
                         res = search(universe = instances, srch_param = srch, find_group = False)
                         val.add_attribute(atr = name_prp, val = res)
-            print(val)
 
     return instances
 
 def save_ontology(inst, onto):
-    print('start save')
     for cl in inst:
         for ins in inst[cl]:
+            print(ins)
             if ins.variables['onto_instance']['values'] == None:
-                ins.variables['onto_instance']['values'] = eval(f"onto.{cl}(str_name)")
+                edit_name = ins.variables['str_name']['values'].replace(" ","_")
+                onto_class = eval(f"onto.{cl}")
+                ins.variables['onto_instance']['values'] = onto_class(edit_name) 
 
     for cl in inst:
         for ins in inst[cl]:
@@ -180,7 +184,7 @@ def save_ontology(inst, onto):
                         for prop_v in prop_val:
                             if prop_v not in onto_prop_lst:
                                 if isinstance(prop_v,str):
-                                    prop_v_str = '\'' + prop_v + '\''
+                                    prop_v_str = '\"' + prop_v.replace("\'","\\\'").replace("\"","\\\"") + '\"'
                                 elif isinstance(prop_v,Thing):
                                     prop_v_str = "prop_v.variables['onto_instance']['values']"
                                 else:
@@ -188,14 +192,23 @@ def save_ontology(inst, onto):
                                 exec(f"onto_inst.{prop}.append({prop_v_str})")
                     else:
                         if isinstance(prop_val,str):
-                            prop_val = '\'' + prop_val + '\''
+                            prop_val = '\'' + prop_val.replace("\'","\\\'").replace("\"","\\\"") + '\''
                         exec(f"onto_inst.{prop} = {prop_val}")
     
-    onto.save(file = "ontology/result.owl", format = "rdfxml")
+
+    if len(sys.argv) > 2:
+        onto.save(file = f"ontology/{sys.argv[2]}", format = "rdfxml")
+    else:
+        onto.save(file = "ontology/result.owl", format = "rdfxml")
+    
 
 
 def isItDone(instances):
-    #FUNCTION TO REPRESENT IF THE GENERATOR SHOULD STOP
+    global counter
+    if len(sys.argv) > 3 and sys.argv[3].isdigit() and counter >= int(sys.argv[3]):
+        return True
+    print(f'---------Loop {counter}---------')
+    counter += 1
     return False
 
 def pick_pipeline(instances):
@@ -214,7 +227,7 @@ def pick_pipeline(instances):
         if properties[rj] not in ['str_name', 'onto_instance'] and ent.variables[properties[rj]]['values'] == []:
             if ent.attribute_type(properties[rj]) == 'data':
                 return { 'pipeline':'data_property_generation', 'entity':ent, 'property':properties[rj], 'value':ent.variables[properties[rj]]['values']}
-            elif ent.attribute_type(properties[rj]) == 'entity':
+            if ent.attribute_type(properties[rj]) == 'entity':
                 return { 'pipeline':'entity_property_generation', 'entity':ent, 'property':properties[rj], 'value':ent.variables[properties[rj]]['values']}
 
 
@@ -226,98 +239,106 @@ def data_property_generation_pipeline(obj):
         tpc += 's'
     tpc += ' ' + obj['property']
     msg = data_property_generator_text.format(gen_words=gen_words_data_prop_table[obj['property']], topic=tpc , topic_definition = obj['entity'].attribute_description(obj['property']) ,info_topic=obj['entity'].short_description())
-    print('start pipe ' + tpc)
+    print('------------Start pipe ' + tpc + '------------')
     answ = sendAndWaitForLLM({'txt':msg,'temp':2.00, 'max_tokens':300})
     print(answ['txt'])
     
     gen_cont = answ['txt'].split('Generated content:\n')[1].split('\n')
     gen_cont = list(map(lambda x: x.strip('-').strip('.'), gen_cont))
-    
-    
     gen_cont = prompt_user(prompt = f'The following content has been generated in reference to {tpc}:', options = gen_cont)
-    #print(gen_cont)
-    #print(obj['entity'])
-    #NEXT STEP -> Update
+
     p = obj['property']
     for c in gen_cont:
         obj['entity'].add_attribute(atr = p, val = c)
-        #exec(f'obj[\'entity\'].add_{p}(c)')
-    #print(obj['entity'])
-
 
 def entity_property_generation_pipeline(obj):
-    
     tpc = obj['entity'].variables['str_name']['values'] + '\''
-    
-    if tpc[-2] != 's':
-        tpc += 's '
-    tpc += obj['property']
-    msg = data_property_generator_text.format(gen_words=gen_words_data_prop_table[obj['property']], topic=tpc , topic_definition = obj['entity'].attribute_description(obj['property']) ,info_topic=obj['entity'].short_description())
-    print('start pipe ' + tpc)
-    answ = sendAndWaitForLLM({'txt':msg,'temp':2.00, 'max_tokens':300})
-    print(answ['txt'])
-    #prompt_user(disabled for now?)
-    gen_cont = answ['txt'].split('Generated content:\n')[1].split('\n')
-    gen_cont = list(map(lambda x: x.strip('-').strip('.'), gen_cont))
-    #print(gen_cont)
-    #print(obj['entity'])
-    #NEXT STEP -> Update
-    p = obj['property']
-    for c in gen_cont:
-        obj['entity'].add_attribute(atr = p, val = c)
-        # exec(f'obj[\'entity\'].add_{p}(c)')
-    #print(obj['entity'])
+    if obj['entity'].variables['str_name']['values'][-1] != 's':
+        tpc += 's'
+    tpc += ' ' + obj['property']
+    ent_type = sample( obj['entity'].variables[obj['property']]['gen_cont'], 1)[0]
 
+    msg = entity_property_generator_name_text.format(entity_type = ent_type, topic_entity= obj['entity'].variables['str_name']['values'], topic = tpc, topic_definition = obj['entity'].variables[obj['property']]['description'].format(gen=ent_type), info_topic=obj['entity'].short_description())
+    print('------------Start pipe ' + tpc + '------------')
+    answ = sendAndWaitForLLM({'txt':msg,'temp':1.50, 'max_tokens':300})
+    print(answ['txt'])
+    nam = answ['txt'].split('name:')[1].split(":")
+    nam = nam[min(1,len(nam)-1)].split("(")[0].split(")")
+    nam = nam[min(1,len(nam)-1)].split("\"")
+    nam = nam[min(1,len(nam)-1)].strip('\n \'\"*`>-\t\r:').split("\n")[0].strip('\n \'\"*`>-\t\r:')
+    
+    msg2 = entity_property_generator_description_text.format(entity_type = ent_type, topic_entity= obj['entity'].variables['str_name']['values'], topic = tpc, topic_definition = obj['entity'].variables[obj['property']]['description'].format(gen=ent_type), info_topic=obj['entity'].short_description(),name = nam )
+    answ2 = sendAndWaitForLLM({'txt':msg2,'temp':2.00, 'max_tokens':300})
+    print(answ2['txt'].replace('\u200b',''))
+    
+    
+    descr = answ2['txt'].replace('\u200b','').split('description bullet list:')[1].strip('\n \'\"*>-\t\r:`').replace('\n', '.').split('.')
+    pattern = re.compile(r'\d+[.)-]\s*')
+    descr = list(filter(lambda x: x != '', list(map(lambda x: re.sub(pattern, '', x.strip('*>:- \"\t\r\'`')), descr))))
+    
+    gen_cont = prompt_user(prompt = f'The following entity has been generated in reference to {tpc}:', options = f'-Name: {nam}\n-Description: {random_list_formater(descr,len(descr),3)}')
+    if gen_cont == None:
+        return None
+    if nam == '':
+        nam = f"{obj['entity'].variables['str_name']['values']} {obj['property']} {ent_type}"
+
+    new_ent = eval(f'{ent_type}()')
+    new_ent.add_attribute(atr = 'str_name', val = nam)
+    for d in descr:
+        new_ent.add_attribute(atr = 'description', val = d)
+    obj['entity'].add_attribute(atr = obj['property'], val = new_ent)
+    return new_ent
+    
 
 if __name__ == '__main__':
     
-    global llm_req, llm_res, query_req, query_res
+    global llm_req, llm_res
     llm_req = multiprocessing.Queue() #This queue sends the requests to the LLM
     llm_res = multiprocessing.Queue() #This queue sends the formated results of the LLM
-    #query_req = Queue() #This queue sends the requests to the LLM
-    #query_res = Queue() #This queue sends the formated results of the LLM
 
     pr_llm = multiprocessing.Process(target=llm_manager, args=(llm_req, llm_res))
-    #th_query = threading.Thread(target=query_manager, args=(query_req, query_res))
+
+    global counter
+    counter = 0
 
     try:
         pr_llm.start()
-        #th_query.start()
-        #onto = get_ontology("file://ontology/ontoTFG.owl").load()
-        onto = get_ontology("file://ontology/ontoTFGinstances.owl").load()
+ 
+        if len(sys.argv) > 1:
+            try:
+                
+                onto = get_ontology(f"file://ontology/{sys.argv[1]}").load()
+            except:
+                print("Wrong file name within the ontology folder")
+        else:
+            onto = get_ontology("file://ontology/ontoTFGinstances.owl").load()
 
         sync_reasoner()
         instances = initialize_classes(onto)
-
-        #print(instances['Item'][1].__dict__)
-        #print(instances['Item'][1].__class__.__name__)
-        #print(recursive_superclass(instances['Item'][1].__class__))
         
         while not isItDone(instances):
             obj = pick_pipeline(instances)
-            #print(obj['entity'].short_description())
             
             match obj['pipeline']:
                 case 'data_property_generation':
                     data_property_generation_pipeline(obj)
                 case 'entity_property_generation':
-                    #entity_property_generation
+                    ret = entity_property_generation_pipeline(obj)
+                    if ret != None:
+                        if ret.__class__.__name__ in instances:
+                            instances[ret.__class__.__name__].append(ret)
+                        else:
+                            instances[ret.__class__.__name__] = [ret]
+                case _:
                     pass
-                #case 'entity_property_relation':
-                #case 'story_action_generation':
 
-            #run_llm
-            #prompt_user
-            #update
 
         save_ontology(instances, onto)
         pr_llm.terminate()
         pr_llm.join()
-        #th_query.join()
   
     except KeyboardInterrupt:
         print("Interrupt caught")
         pr_llm.terminate()
         pr_llm.join()
-        #th_query.join()
         save_ontology(instances, onto)
